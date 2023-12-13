@@ -1,0 +1,24 @@
+{
+  "name": "quantinuum-ui",
+  "version": "1.0.0",
+  "description": "Quantinuum design tokens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CQCL/quantinuum-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CQCL/quantinuum-ui/issues"
+  },
+  "homepage": "https://github.com/CQCL/quantinuum-ui#readme",
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.3.6"
+  }
+}
