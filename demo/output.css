@@ -1042,6 +1042,15 @@ video {
   margin-bottom: 0;
 }
 
+.relative {
+  position: relative;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .table {
   display: table;
 }
@@ -1054,6 +1063,35 @@ video {
   border-collapse: collapse;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1063,8 +1101,43 @@ video {
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-32 {
+  padding: 8rem;
+}
+
+.p-64 {
+  padding: 16rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .pl-8 {
@@ -1090,12 +1163,44 @@ video {
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 :is([data-theme="dark"] .dark\:border-slate-700) {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+:is([data-theme="dark"] .dark\:bg-slate-800\/25) {
+  background-color: rgb(30 41 59 / 0.25);
+}
+
 :is([data-theme="dark"] .dark\:text-slate-400) {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.\[\&\>\*\]\:border>* {
+  border-width: 1px;
+}
+
+.\[\&\>\*\]\:border-b>* {
+  border-bottom-width: 1px;
+}
+
+.\[\&\>\*\]\:border-slate-300>* {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.\[\&\>\*\]\:p-2>* {
+  padding: 0.5rem;
+}
+
+.\[\&\>\*\]\:px-6>* {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }

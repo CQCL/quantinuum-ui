@@ -4,8 +4,7 @@
   "description": "Quantinuum design tokens.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "echo 'Demo dev mode started...' && cd ./demo && open ./index.html && npx tailwindcss -c ./tailwind.config.ts -i ./input.css -o ./output.css --watch"
+    "dev": "echo 'Demo dev mode started...' && cd ./demo && npx tailwindcss -c ./tailwind.config.ts -i ./input.css -o ./output.css --watch"
   },
   "repository": {
     "type": "git",

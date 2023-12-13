@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="../theme/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
-<body class="font-sans">
+<body class="font-sans p-16">
     <h1>Colours</h1>
     <ul>
         <li></li>
     </ul>
+    <div class="prose">
     <h1 class="text-red-600">Typography</h1>
     <h1>Heading 1</h1>
-    <h1>Heading 2</h1>
-    <h1>Heading 3</h1>
-    <h1>Heading 4</h1>
-    <h1>Heading 5</h1>
-    <h1>Heading 6</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <caption>Caption</caption>
     <button>Button</button>
+    
+</div>
     <h1>Button</h1>
     <h1>Caption</h1>
     <div>Surface</div>
@@ -33,18 +38,19 @@
     <h1>Caption</h1>
     <h1></h1>
     <h1></h1>
-    <table class="border-collapse table-auto text-sm">
-        <caption>Table description</caption>
-        <thead>
-            <tr>
-                <th class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">Column A</th>
+    <div class="shadow-sm border border-slate-200 my-8 relative bg-slate-50 rounded-sm overflow-hidden dark:bg-slate-800/25">
+    <table class="border-collapse table-auto text-sm ">
+        <!-- <caption>Table description</caption> -->
+        <thead class=" ">
+            <tr class="[&>*]:border-b [&>*]:border-slate-300 [&>*]:p-2 [&>*]:px-6">
+                <th>Column A</th>
                 <th>Column B</th>
                 <th>Column C</th>
                 <th>Column D</th>
             </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr class="[&>*]:border [&>*]:border-slate-300 [&>*]:p-2 [&>*]:px-6">
             <td>Column A</td>
             <td>Column B</td>
             <td>Column C</td>
@@ -56,11 +62,12 @@
             <td>Column C</td>
             <td>Column D</td>
         </tr>
-        <tfoot>
+        <!-- <tfoot>
             Footer
-        </tfoot>
+        </tfoot> -->
     </tbody>
     </table>
+</div>
     <div class="prose">
 
     </div>
