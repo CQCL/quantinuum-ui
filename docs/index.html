@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../theme/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="font-sans">
+    <h1>Colours</h1>
+    <ul>
+        <li></li>
+    </ul>
+    <h1 class="text-red-600">Typography</h1>
     <h1>Heading 1</h1>
     <h1>Heading 2</h1>
     <h1>Heading 3</h1>
@@ -15,12 +25,41 @@
     <button>Button</button>
     <h1>Button</h1>
     <h1>Caption</h1>
+    <div>Surface</div>
+    <div>Surface Weak</div>
+    <div>Surface Strong</div>
+    <div>Surface</div>
+    <div>Surface</div>
+    <h1>Caption</h1>
     <h1></h1>
     <h1></h1>
-    <table>
+    <table class="border-collapse table-auto text-sm">
+        <caption>Table description</caption>
         <thead>
-        <th><td></td></th>
-    </thead>
+            <tr>
+                <th class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">Column A</th>
+                <th>Column B</th>
+                <th>Column C</th>
+                <th>Column D</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Column A</td>
+            <td>Column B</td>
+            <td>Column C</td>
+            <td>Column D</td>
+        </tr>
+        <tr>
+            <td>Column A</td>
+            <td>Column B</td>
+            <td>Column C</td>
+            <td>Column D</td>
+        </tr>
+        <tfoot>
+            Footer
+        </tfoot>
+    </tbody>
     </table>
     <div class="prose">
 
