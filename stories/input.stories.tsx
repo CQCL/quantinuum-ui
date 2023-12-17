@@ -1,0 +1,26 @@
+import type { Meta, StoryObj } from "@storybook/react";
+import { Input } from "src/components/ui/input";
+
+const meta: Meta<typeof Input> = {
+  component: Input,
+};
+
+export default meta;
+type Story = StoryObj<typeof Input>;
+
+export const Text: Story = {
+  args: {
+    type: "text",
+    placeholder: "Placeholder text",
+  },
+};
+export const Number: Story = {
+  args: {
+    type: "number",
+  },
+};
+export const File: Story = {
+  args: {
+    type: "file",
+  },
+};
