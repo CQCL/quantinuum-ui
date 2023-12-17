@@ -23,10 +23,15 @@ jobs:
       - name: Build storybook
         run: npm run build-storybook
 
+      - name: Setup pages.
+        uses: actions/configure-pages@v2
+      - name: Upload artifact.
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./storybook-static/
       - name: Publish storybook build to github pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        id: deployment
+        uses: actions/deploy-pages@v1
 
       - name: Publish library to github packages
         env:
