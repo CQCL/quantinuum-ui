@@ -19,7 +19,7 @@ const meta: Meta<typeof Switch> = {
 export default meta;
 type Story = StoryObj<typeof Switch>;
 
-export const Search: Story = {
+export const Default: Story = {
   args: {
     checked: true,
   },
