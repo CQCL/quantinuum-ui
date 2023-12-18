@@ -6,7 +6,8 @@
   "author": "aidan.keay@quantinuum.com",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "rm -rf ./build && rollup -c && storybook build"
+    "build-storybook": "storybook-build",
+    "build-lib": "rm -rf ./dist && rollup -c"
   },
   "release": {
     "branches": [
