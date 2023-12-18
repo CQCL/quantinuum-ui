@@ -13,6 +13,9 @@
       "main"
     ]
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CQCL/quantinuum-ui.git"
