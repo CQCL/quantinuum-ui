@@ -9,7 +9,7 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        dir: "build/",
+        dir: "dist/",
         format: "esm",
         sourcemap: true,
       },
