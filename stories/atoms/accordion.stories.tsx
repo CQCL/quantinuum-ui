@@ -1,12 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "src/atoms/accordion";
-export function AccordionDemo() {
+function AccordionDemo() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
@@ -37,8 +36,7 @@ const meta: Meta<typeof AccordionDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof AccordionDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof AccordionDemo> = {
   args: {},
 };

@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 import { AspectRatio } from "src/atoms/aspect-ratio";
 export function AspectRatioDemo() {
   return (
@@ -13,13 +12,14 @@ export function AspectRatioDemo() {
   );
 }
 
-const meta: Meta<typeof AspectRatio> = {
-  component: AspectRatio,
+import type { StoryObj } from "@storybook/react";
+
+const meta: Meta<typeof AspectRatioDemo> = {
+  component: AspectRatioDemo,
 };
 
 export default meta;
-type Story = StoryObj<typeof AspectRatio>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof AspectRatioDemo> = {
   args: {},
 };

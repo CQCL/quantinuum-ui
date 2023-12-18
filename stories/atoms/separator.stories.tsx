@@ -7,8 +7,7 @@ const meta: Meta<typeof Separator> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Separator>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof Separator> = {
   args: {},
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -11,7 +10,7 @@ import {
   AlertDialogTrigger,
 } from "src/atoms/alert-dialog";
 import { Button } from "src/atoms/button";
-export function AlertDialogDemo() {
+function AlertDialogDemo() {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
@@ -41,8 +40,7 @@ const meta: Meta<typeof AlertDialogDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof AlertDialogDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof AlertDialogDemo> = {
   args: {},
 };

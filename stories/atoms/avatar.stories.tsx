@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "src/atoms/avatar";
 export function AvatarDemo() {
   return (
@@ -16,8 +15,7 @@ const meta: Meta<typeof AvatarDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof AvatarDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof AvatarDemo> = {
   args: {},
 };

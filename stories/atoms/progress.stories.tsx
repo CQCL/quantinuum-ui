@@ -6,11 +6,7 @@ const meta: Meta<typeof Progress> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Progress>;
 
-export const Default: Story = {
-  args: {
-    children: "default",
-    value: 25,
-  },
+export const Default: StoryObj<typeof Progress> = {
+  args: {},
 };

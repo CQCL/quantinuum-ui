@@ -45,15 +45,16 @@ export function CollapsibleDemo() {
   );
 }
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta } from "@storybook/react";
+
+import type { StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof CollapsibleDemo> = {
   component: CollapsibleDemo,
 };
 
 export default meta;
-type Story = StoryObj<typeof CollapsibleDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof CollapsibleDemo> = {
   args: {},
 };

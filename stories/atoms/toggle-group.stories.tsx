@@ -1,6 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
-import { Button } from "src/atoms/button";
 
 import {
   FontBoldIcon,
@@ -32,8 +30,7 @@ const meta: Meta<typeof ToggleGroup> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof ToggleGroup> = {
   args: {},
 };

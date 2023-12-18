@@ -11,8 +11,7 @@ const meta: Meta<typeof ThemeSelectorDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof ThemeSelectorDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof ThemeSelectorDemo> = {
   args: {},
 };

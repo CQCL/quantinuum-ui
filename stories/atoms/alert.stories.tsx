@@ -1,7 +1,7 @@
 import { RocketIcon } from "@radix-ui/react-icons";
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta } from "@storybook/react";
 
-import React from "react";
+import type { StoryObj } from "@storybook/react";
 import { Alert, AlertDescription, AlertTitle } from "src/atoms/alert";
 
 export function AlertDemo() {
@@ -15,13 +15,13 @@ export function AlertDemo() {
     </Alert>
   );
 }
+
 const meta: Meta<typeof AlertDemo> = {
   component: AlertDemo,
 };
 
 export default meta;
-type Story = StoryObj<typeof AlertDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof AlertDemo> = {
   args: {},
 };

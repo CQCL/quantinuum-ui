@@ -19,18 +19,17 @@ export function CalendarDemo() {
   );
 }
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta } from "@storybook/react";
 import { DateRange } from "react-day-picker";
+
+import type { StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof CalendarDemo> = {
   component: CalendarDemo,
 };
 
 export default meta;
-type Story = StoryObj<typeof CalendarDemo>;
 
-export const Default: Story = {
-  args: {
-    children: "default",
-  },
+export const Default: StoryObj<typeof CalendarDemo> = {
+  args: {},
 };

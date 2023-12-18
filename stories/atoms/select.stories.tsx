@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import React, { ComponentProps } from "react";
 
 import {
   Select,
@@ -9,31 +9,30 @@ import {
   SelectValue,
 } from "src/atoms/select";
 
-const meta: Meta<typeof Select> = {
-  component: (args) => {
-    const [value, setValue] = React.useState(args.value);
-    return (
-      <div>
-        <Select value={value} onValueChange={setValue}>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Theme" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="light">Light</SelectItem>
-            <SelectItem value="dark">Dark</SelectItem>
-            <SelectItem value="system">System</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-    );
-  },
+const Demo = (args: ComponentProps<typeof Select>) => {
+  const [value, setValue] = React.useState(args.value);
+  return (
+    <div>
+      <Select {...args} value={value} onValueChange={setValue}>
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="Theme" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+      </Select>
+    </div>
+  );
+};
+
+const meta: Meta<typeof Demo> = {
+  component: Demo,
 };
 
 export default meta;
-type Story = StoryObj<typeof Select>;
 
-export const Search: Story = {
-  args: {
-    value: "light",
-  },
+export const Default: StoryObj<typeof Demo> = {
+  args: {},
 };

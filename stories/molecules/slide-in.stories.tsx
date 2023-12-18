@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 import { SlideIn } from "src/molecules/slide-in";
 
 const meta: Meta<typeof SlideIn> = {
@@ -15,8 +14,7 @@ const meta: Meta<typeof SlideIn> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof SlideIn>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof SlideIn> = {
   args: {},
 };

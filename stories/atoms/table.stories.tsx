@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 import {
   Table,
   TableBody,
@@ -93,8 +92,3 @@ const meta: Meta<typeof Table> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Table>;
-
-export const Default: Story = {
-  args: {},
-};

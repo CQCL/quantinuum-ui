@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import { ComponentProps } from "react";
 import {
   Sheet,
   SheetContent,
@@ -9,28 +9,29 @@ import {
   SheetTrigger,
 } from "src/atoms/sheet";
 
+const Demo = (args: ComponentProps<typeof Sheet>) => {
+  return (
+    <Sheet {...args}>
+      <SheetTrigger>Open</SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+          <SheetDescription>
+            This action cannot be undone. This will permanently delete your
+            account and remove your data from our servers.
+          </SheetDescription>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
+  );
+};
+
 const meta: Meta<typeof Sheet> = {
-  component: (args) => {
-    return (
-      <Sheet {...args}>
-        <SheetTrigger>Open</SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Are you sure absolutely sure?</SheetTitle>
-            <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
-    );
-  },
+  component: Demo,
 };
 
 export default meta;
-type Story = StoryObj<typeof Sheet>;
 
-export const Search: Story = {
+export const Default: StoryObj<typeof Sheet> = {
   args: {},
 };

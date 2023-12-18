@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "src/atoms/tabs";
 
 const meta: Meta<typeof Tabs> = {
@@ -20,10 +19,3 @@ const meta: Meta<typeof Tabs> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Tabs>;
-
-export const Default: Story = {
-  args: {
-    children: "default",
-  },
-};

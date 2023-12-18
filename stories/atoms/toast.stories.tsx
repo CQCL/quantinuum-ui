@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 import { Button } from "src/atoms/button";
 import { Toaster } from "src/atoms/toaster";
 import { useToast } from "src/atoms/use-toast";
@@ -16,13 +15,13 @@ const meta: Meta<typeof Toaster> = {
       </div>
     );
   },
-};
-
-export default meta;
-type Story = StoryObj<typeof Toaster>;
-
-export const Toasty: Story = {
   args: {
     color: "red",
   },
+};
+
+export default meta;
+
+export const Default: StoryObj<typeof Toaster> = {
+  args: {},
 };

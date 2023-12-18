@@ -3,13 +3,11 @@ import { Skeleton } from "src/atoms/skeleton";
 
 const meta: Meta<typeof Skeleton> = {
   component: Skeleton,
+  args: { className: "h-10 w-full" },
 };
 
 export default meta;
-type Story = StoryObj<typeof Skeleton>;
 
-export const Default: Story = {
-  args: {
-    className: "h-10 w-full",
-  },
+export const Default: StoryObj<typeof Skeleton> = {
+  args: {},
 };

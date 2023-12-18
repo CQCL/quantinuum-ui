@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 import { Button } from "src/atoms/button";
 import {
   Tooltip,
@@ -7,7 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "src/atoms/tooltip";
-export function TooltipDemo() {
+function TooltipDemo() {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -27,8 +26,7 @@ const meta: Meta<typeof TooltipDemo> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof TooltipDemo>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof Tooltip> = {
   args: {},
 };

@@ -3,8 +3,7 @@ import { Input } from "src/atoms/input";
 import { Label } from "src/atoms/label";
 import { Popover, PopoverContent, PopoverTrigger } from "src/atoms/popover";
 
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 
 const meta: Meta<typeof Popover> = {
   component: (args) => {
@@ -63,8 +62,3 @@ const meta: Meta<typeof Popover> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Popover>;
-
-export const Default: Story = {
-  args: {},
-};

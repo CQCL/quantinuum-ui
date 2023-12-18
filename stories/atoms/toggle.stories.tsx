@@ -1,6 +1,5 @@
 import { FontBoldIcon } from "@radix-ui/react-icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 import { Toggle } from "src/atoms/toggle";
 
@@ -15,8 +14,7 @@ const meta: Meta<typeof Toggle> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Toggle>;
 
-export const Default: Story = {
+export const Default: StoryObj<typeof Toggle> = {
   args: {},
 };
