@@ -1,5 +1,5 @@
 {
-  "name": "quantinuum-ui",
+  "name": "@cqcl/quantinuum-ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
   "main": "index.js",
