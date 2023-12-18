@@ -12,7 +12,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "src/atoms/navigation-menu";
-import { ThemeSelector, useTheme } from "src/molecules/theme-selector";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -53,7 +52,6 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 function NavigationDemo() {
-  const { theme, setMode } = useTheme();
   return (
     <NavigationMenu className="w-full">
       <NavigationMenuList>
@@ -61,7 +59,6 @@ function NavigationDemo() {
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
 
           <NavigationMenuContent>
-            <ThemeSelector theme={theme} setMode={setMode}></ThemeSelector>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
