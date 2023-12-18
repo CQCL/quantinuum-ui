@@ -1,14 +1,14 @@
 # quantinuum-ui
 Quantinuum design tokens and React components.
 
-Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind / radix-ui theme. Shadcn isn't a direct dependency but has a CLI tool to generate components into this repo based on `components.json`.
+Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and radix-ui component generator. Shadcn isn't a direct dependency but has a CLI tool to generate components into this repo based on `components.json`.
 
 ### Development
 
 ```bash
 npm run dev # Run storybook application to view components.
 npm run build-storybook # Build storybook application as static HTML.
-npm run build-lib # Build component library with rollup
+npm run build-lib # Build component library with rollup.
 ``` 
 
 ### Design Tokens
