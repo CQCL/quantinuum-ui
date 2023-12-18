@@ -2,7 +2,7 @@
   "name": "@cqcl/quantinuum-ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "aidan.keay@quantinuum.com",
   "scripts": {
     "dev": "storybook dev -p 6006",
