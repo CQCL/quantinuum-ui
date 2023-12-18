@@ -2,7 +2,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import copy from "rollup-plugin-copy";
+import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
+
 export default [
   {
     input: "index.ts",
@@ -10,7 +12,7 @@ export default [
       {
         dir: "dist/",
         format: "esm",
-        // preserveModules: true,
+        preserveModules: true,
       },
     ],
     plugins: [
@@ -28,7 +30,8 @@ export default [
         targets: [{ src: "./src/tokens.css", dest: "./dist" }],
       }),
       // Minify output.
-      terser(),
+      terser({ compress: { directives: false } }),
+      preserveDirectives(),
     ],
   },
 ];
