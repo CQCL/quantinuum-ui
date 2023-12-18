@@ -37,6 +37,7 @@ export * from "./atoms/toaster";
 export * from "./atoms/toggle";
 export * from "./atoms/toggle-group";
 export * from "./atoms/tooltip";
+export * from "./atoms/use-toast";
 export * from "./molecules/slide-in";
 export * from "./molecules/theme-selector";
 export * from "./utils";
