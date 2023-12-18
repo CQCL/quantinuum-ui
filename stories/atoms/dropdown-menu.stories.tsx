@@ -6,7 +6,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "src/atoms/dropdown-menu";
+} from "src";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

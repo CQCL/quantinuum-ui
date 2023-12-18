@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Button } from "src/atoms/button";
 import {
+  Button,
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "src/atoms/tooltip";
+} from "src";
 function TooltipDemo() {
   return (
     <TooltipProvider>

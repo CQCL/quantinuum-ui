@@ -1,7 +1,7 @@
 import { FontBoldIcon } from "@radix-ui/react-icons";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Toggle } from "src/atoms/toggle";
+import { Toggle } from "src";
 
 const meta: Meta<typeof Toggle> = {
   component: () => {

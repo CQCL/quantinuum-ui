@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Badge } from "src/atoms/badge";
+import { Badge } from "src";
 
 export function BadgeDemo() {
   return (

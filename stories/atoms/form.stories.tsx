@@ -1,8 +1,8 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { Button } from "src/atoms/button";
 import {
+  Button,
   Form,
   FormControl,
   FormDescription,
@@ -10,8 +10,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "src/atoms/form";
-import { Input } from "src/atoms/input";
+  Input,
+} from "src";
 import { z } from "zod";
 
 import type { Meta, StoryObj } from "@storybook/react";

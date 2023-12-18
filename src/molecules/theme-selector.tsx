@@ -1,7 +1,7 @@
 import { ComputerIcon, MoonIcon, SunIcon } from "lucide-react";
 import React from "react";
-import { ToggleGroup, ToggleGroupItem } from "src/atoms/toggle-group";
 import { theme as _theme } from "src/utils";
+import { ToggleGroup, ToggleGroupItem } from "../atoms/toggle-group";
 
 export const useTheme = () => {
   const [theme, _setTheme] = React.useState(_theme.get());

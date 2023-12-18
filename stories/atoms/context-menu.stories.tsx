@@ -13,7 +13,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "src/atoms/context-menu";
+} from "src";
 
 const ContextMenuDemo = () => {
   return (

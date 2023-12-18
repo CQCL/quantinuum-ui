@@ -5,15 +5,17 @@ import type { Meta } from "@storybook/react";
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
 import * as React from "react";
 
-import { Button } from "src/atoms/button";
 import {
+  Button,
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "src/atoms/command";
-import { Popover, PopoverContent, PopoverTrigger } from "src/atoms/popover";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "src";
 import { cn } from "src/utils";
 
 const frameworks = [

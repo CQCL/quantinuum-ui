@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "src/atoms/dialog";
+} from "src";
 
 const DialogDemo = () => {
   return (

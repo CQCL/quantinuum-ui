@@ -1,17 +1,18 @@
 import { IconJarLogoIcon } from "@radix-ui/react-icons";
 import { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import { Input, cn } from "src";
-import { Button } from "src/atoms/button";
 import {
+  Button,
+  Input,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  cn,
   navigationMenuTriggerStyle,
-} from "src/atoms/navigation-menu";
+} from "src";
 
 const components: { title: string; href: string; description: string }[] = [
   {

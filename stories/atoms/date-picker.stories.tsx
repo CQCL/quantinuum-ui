@@ -3,9 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import * as React from "react";
-import { Button } from "src/atoms/button";
-import { Calendar } from "src/atoms/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "src/atoms/popover";
+import { Button, Calendar, Popover, PopoverContent, PopoverTrigger } from "src";
 import { cn } from "src/utils";
 
 const DatePickerDemo = () => {

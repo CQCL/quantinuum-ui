@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "src/atoms/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "src";
 export function AvatarDemo() {
   return (
     <Avatar>

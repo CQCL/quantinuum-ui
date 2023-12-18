@@ -15,7 +15,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "src/atoms/command";
+} from "src";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

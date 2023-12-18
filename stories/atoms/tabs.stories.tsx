@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "src/atoms/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "src";
 
 const meta: Meta<typeof Tabs> = {
   component: () => {

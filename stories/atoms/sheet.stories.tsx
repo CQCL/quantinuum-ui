@@ -7,7 +7,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "src/atoms/sheet";
+} from "src";
 
 const Demo = (args: ComponentProps<typeof Sheet>) => {
   return (

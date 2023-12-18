@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { Checkbox } from "src/atoms/checkbox";
+import { Checkbox } from "src";
 
 const CheckboxDemo = () => {
   return (

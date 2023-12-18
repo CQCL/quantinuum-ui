@@ -1,7 +1,11 @@
-import { Button } from "src/atoms/button";
-import { Input } from "src/atoms/input";
-import { Label } from "src/atoms/label";
-import { Popover, PopoverContent, PopoverTrigger } from "src/atoms/popover";
+import {
+  Button,
+  Input,
+  Label,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "src";
 
 import type { Meta } from "@storybook/react";
 

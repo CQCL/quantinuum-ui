@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { AspectRatio } from "src/atoms/aspect-ratio";
+import { AspectRatio } from "src";
 export function AspectRatioDemo() {
   return (
     <AspectRatio ratio={1 / 1} className="bg-muted">

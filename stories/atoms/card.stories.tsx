@@ -1,22 +1,20 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "src/atoms/button";
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "src/atoms/card";
-import { Input } from "src/atoms/input";
-import { Label } from "src/atoms/label";
-import {
+  Input,
+  Label,
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "src/atoms/select";
+} from "src";
 
 const CardDemo = () => {
   return (

@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React, { ComponentProps } from "react";
-import { Label } from "src/atoms/label";
-import { RadioGroup, RadioGroupItem } from "src/atoms/radio-group";
+import { Label, RadioGroup, RadioGroupItem } from "src";
 
 const Demo = (args: ComponentProps<typeof RadioGroup>) => {
   const [value, setValue] = React.useState(args.value);

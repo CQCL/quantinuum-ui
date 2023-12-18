@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "src/atoms/table";
+} from "src";
 
 const invoices = [
   {

@@ -14,7 +14,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "src/atoms/navigation-menu";
+} from "src";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -166,8 +166,7 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from "src";
-import { Button } from "src/atoms/button";
+import { Button, Input } from "src";
 
 const meta: Meta<typeof NavigationMenuDemo> = {
   component: NavigationMenuDemo,

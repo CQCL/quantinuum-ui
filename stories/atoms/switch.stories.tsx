@@ -1,7 +1,7 @@
 import type { Meta } from "@storybook/react";
 import React from "react";
 
-import { Switch } from "src/atoms/switch";
+import { Switch } from "src";
 
 const meta: Meta<typeof Switch> = {
   component: (args) => {

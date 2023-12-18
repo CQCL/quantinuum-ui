@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "src/atoms/alert-dialog";
-import { Button } from "src/atoms/button";
+  Button,
+} from "src";
 function AlertDialogDemo() {
   return (
     <AlertDialog>

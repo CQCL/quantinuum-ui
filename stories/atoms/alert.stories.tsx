@@ -2,7 +2,7 @@ import { RocketIcon } from "@radix-ui/react-icons";
 import { Meta } from "@storybook/react";
 
 import type { StoryObj } from "@storybook/react";
-import { Alert, AlertDescription, AlertTitle } from "src/atoms/alert";
+import { Alert, AlertDescription, AlertTitle } from "src";
 
 export function AlertDemo() {
   return (
