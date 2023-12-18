@@ -1,10 +1,10 @@
 const modes = ["system", "dark", "light"] as const;
-export type Mode = (typeof modes)[number];
+type Mode = (typeof modes)[number];
 const isMode = (mode: string): mode is Mode => {
   return ["system", "dark", "light"].includes(mode);
 };
 
-const mode_storage_key = "data-mode" as const;
+const mode_storage_key = "data-theme-mode" as const;
 
 const isDark = (mode: Mode): boolean => {
   return (
@@ -26,22 +26,37 @@ const getTheme = () => {
 
 const setTheme = (mode: Mode) => {
   localStorage.setItem(mode_storage_key, mode);
+
   window.dispatchEvent(new Event("storage"));
 };
 
-const subscribeToTheme = (props: {
-  onChange: (props: { mode: Mode; isDark: boolean }) => void;
-}) => {
-  const callback = () => props.onChange(getTheme());
+const syncDOMClass = () => {
+  const theme = getTheme();
+  if (theme.isDark) {
+    document.documentElement.classList.add("theme-mode-dark");
+  } else {
+    document.documentElement.classList.remove("theme-mode-dark");
+  }
+};
+
+const subscribeToTheme = (callback: () => void) => {
+  callback();
   window.addEventListener("storage", callback);
   window
-    ?.matchMedia?.("(prefers-color-scheme: dark)")
+    .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", callback);
-  callback();
+
+  return () => {
+    window.removeEventListener("storage", callback);
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .removeEventListener("change", callback);
+  };
 };
 
 export const theme = {
   get: getTheme,
   set: setTheme,
   subscribe: subscribeToTheme,
+  syncTheme: () => subscribeToTheme(syncDOMClass),
 };
