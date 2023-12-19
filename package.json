@@ -24,7 +24,7 @@
     ".": "./dist/src/index.js",
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/types",
+  "types": "./dist/types/src/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CQCL/quantinuum-ui.git"
