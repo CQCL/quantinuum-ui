@@ -8,7 +8,7 @@ Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and rad
 ```bash
 npm run dev # Run storybook application to view components.
 npm run build-storybook # Build storybook application as static HTML.
-npm run build-lib # Build component library with rollup.
+npm run build # Build component library with rollup.
 ``` 
 
 ### Design Tokens
