@@ -2,7 +2,6 @@
   "name": "@cqcl/quantinuum-ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
-  "main": "dist/index.js",
   "author": "aidan.keay@quantinuum.com",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -17,11 +16,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./tokens.css": "./dist/tokens.css"
+  },
+  "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CQCL/quantinuum-ui.git"
