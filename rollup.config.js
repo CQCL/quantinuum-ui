@@ -7,7 +7,7 @@ import { terser } from "rollup-plugin-terser";
 
 export default [
   {
-    input: "index.ts",
+    input: "src/index.ts",
     output: [
       {
         dir: "dist/",
@@ -23,7 +23,7 @@ export default [
       // Create typescript definitions.
       typescript({
         tsconfig: "./tsconfig.json",
-        declarationDir: "dist/types",
+        declarationDir: "./dist/types",
       }),
       // CSS vendor prefixing etc.
       copy({

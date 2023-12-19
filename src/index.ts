@@ -1,3 +1,4 @@
+export * from "../tailwind.config";
 export * from "./atoms/accordion";
 export * from "./atoms/alert";
 export * from "./atoms/alert-dialog";

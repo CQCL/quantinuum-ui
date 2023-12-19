@@ -17,10 +17,10 @@
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/src/index.js",
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/types",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CQCL/quantinuum-ui.git"
