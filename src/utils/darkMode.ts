@@ -16,8 +16,9 @@ const isDark = (mode: Mode): boolean => {
 
 const getTheme = () => {
   const localMode = localStorage.getItem(mode_storage_key);
+  // Default to dark mode if none specified.
   const resolvedMode =
-    localMode !== null && isMode(localMode) ? localMode : ("system" as const);
+    localMode !== null && isMode(localMode) ? localMode : ("dark" as const);
   return {
     mode: resolvedMode,
     isDark: isDark(resolvedMode),
