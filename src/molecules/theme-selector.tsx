@@ -1,10 +1,11 @@
+'use client'
 import { ComputerIcon, MoonIcon, SunIcon } from "lucide-react";
 import React from "react";
 import { theme as _theme } from "src/utils";
 import { ToggleGroup, ToggleGroupItem } from "../atoms/toggle-group";
 
 export const useTheme = () => {
-  const [theme, _setTheme] = React.useState(_theme.get());
+  const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>({mode: 'system', isDark: false});
   React.useEffect(() => {
     _theme.subscribe(() => {
       _setTheme(_theme.get());
