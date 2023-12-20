@@ -1,5 +1,5 @@
 import typography from "@tailwindcss/typography";
-import { Config } from "tailwindcss";
+import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 export const tailwindTheme = {
   darkMode: ["class", ".theme-mode-dark"],
