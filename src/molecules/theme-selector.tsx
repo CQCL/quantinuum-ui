@@ -4,8 +4,10 @@ import React from "react";
 import { Button } from "src/atoms/button";
 import { theme as _theme } from "src/utils";
 
-export const useTheme = () => {
-  const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>({mode: 'system', isDark: false});
+type Mode = ReturnType<typeof _theme['get']>['mode']
+export const useTheme = (props: {defaultMode?: Mode }) => {
+  const mode = props.defaultMode ?? "dark"
+  const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>({mode, isDark: _theme.isDark(mode)});
   React.useEffect(() => {
     _theme.subscribe(() => {
       _setTheme(_theme.get());

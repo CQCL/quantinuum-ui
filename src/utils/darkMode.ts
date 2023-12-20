@@ -58,5 +58,6 @@ export const theme = {
   get: getTheme,
   set: setTheme,
   subscribe: subscribeToTheme,
+  isDark,
   syncTheme: () => subscribeToTheme(syncDOMClass),
 };
