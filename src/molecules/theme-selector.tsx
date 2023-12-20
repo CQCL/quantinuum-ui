@@ -27,7 +27,7 @@ export const ThemeSelector = (props: ReturnType<typeof useTheme>) => {
     },
   } satisfies Record<typeof props['theme']['mode'], unknown>
   return (
-    <Button className="aspect-square" variant="outline" aria-label={`mode-${props.theme.mode}`} onClick={() => {
+    <Button className="aspect-square" variant="outline" size="icon" aria-label={`mode-${props.theme.mode}`} onClick={() => {
       if (props.theme.mode === "dark") props.setMode("light")
       if (props.theme.mode === "light") props.setMode("system")
       if (props.theme.mode === "system") props.setMode("dark")
