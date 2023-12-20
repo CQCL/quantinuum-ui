@@ -12,9 +12,6 @@ export const tailwindTheme = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["Inter"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -40,5 +40,5 @@ export * from "./atoms/tooltip";
 export * from "./atoms/use-toast";
 export * from "./molecules/slide-in";
 export * from "./molecules/theme-selector";
-export * from "./tailwind.config";
+export * from "./tailwindTheme";
 export * from "./utils";
