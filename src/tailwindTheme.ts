@@ -1,6 +1,6 @@
-import typography from "@tailwindcss/typography";
+// import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
-import animate from "tailwindcss-animate";
+// import animate from "tailwindcss-animate";
 export const tailwindTheme = {
   darkMode: ["class", ".theme-mode-dark"],
   theme: {
@@ -73,5 +73,5 @@ export const tailwindTheme = {
       },
     },
   },
-  plugins: [animate, typography],
+  // plugins: [animate, typography],
 } satisfies Partial<Config>;
