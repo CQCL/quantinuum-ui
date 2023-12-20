@@ -6,7 +6,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
 
-export default {
+export default [{
   onwarn(warning, warn) {
     if (
       warning.code === "MODULE_LEVEL_DIRECTIVE" &&
@@ -39,4 +39,24 @@ export default {
     terser({ compress: { directives: false } }),
     preserveDirectives(),
   ],
-};
+
+}, {
+  input: "src/utils/syncTheme.ts",
+  output: [
+    {
+      dir: "dist/src/utils/",
+      format: "iife",
+      name: "syncTheme",
+    },
+  ],
+  plugins: [
+    resolve(),
+    commonjs(),
+    typescript({
+      tsconfig: "./tsconfig.json",
+      outDir: "dist/src/utils/",
+      declaration: false,
+    }),
+    terser(),
+  ],
+}];
