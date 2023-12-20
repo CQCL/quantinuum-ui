@@ -1,4 +1,3 @@
-export * from "../tailwind.config";
 export * from "./atoms/accordion";
 export * from "./atoms/alert";
 export * from "./atoms/alert-dialog";
@@ -41,4 +40,5 @@ export * from "./atoms/tooltip";
 export * from "./atoms/use-toast";
 export * from "./molecules/slide-in";
 export * from "./molecules/theme-selector";
+export * from "./tailwind.config";
 export * from "./utils";
