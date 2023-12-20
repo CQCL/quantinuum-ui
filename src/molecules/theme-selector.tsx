@@ -1,8 +1,8 @@
 'use client'
 import { ComputerIcon, MoonIcon, SunIcon } from "lucide-react";
 import React from "react";
+import { Button } from "src/atoms/button";
 import { theme as _theme } from "src/utils";
-import { ToggleGroup, ToggleGroupItem } from "../atoms/toggle-group";
 
 export const useTheme = () => {
   const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>({mode: 'system', isDark: false});
@@ -15,23 +15,25 @@ export const useTheme = () => {
   return { theme, setMode: _theme.set };
 };
 export const ThemeSelector = (props: ReturnType<typeof useTheme>) => {
+  const stateMap = {
+    "light": {
+      icon: <SunIcon className="h-4 w-4" />,
+    },
+    "dark": {
+      icon:  <MoonIcon className="h-4 w-4" />
+    },
+    "system": {
+      icon: <ComputerIcon className="h-4 w-4" />,
+    },
+  } satisfies Record<typeof props['theme']['mode'], unknown>
   return (
-    <ToggleGroup
-      type="single"
-      onValueChange={(mode: (typeof props.theme)["mode"]) =>
-        props.setMode(mode)
-      }
-      value={props.theme.mode}
-    >
-      <ToggleGroupItem value="dark" aria-label="Select dark mode">
-        <MoonIcon className="h-4 w-4" />
-      </ToggleGroupItem>
-      <ToggleGroupItem value="light" aria-label="Select light theme">
-        <SunIcon className="h-4 w-4" />
-      </ToggleGroupItem>
-      <ToggleGroupItem value="system" aria-label="Select system theme">
-        <ComputerIcon className="h-4 w-4" />
-      </ToggleGroupItem>
-    </ToggleGroup>
-  );
+    <Button className="aspect-square" variant="outline" aria-label={`mode-${props.theme.mode}`} onClick={() => {
+      if (props.theme.mode === "dark") props.setMode("light")
+      if (props.theme.mode === "light") props.setMode("system")
+      if (props.theme.mode === "system") props.setMode("dark")
+    }}>
+      {stateMap[props.theme.mode].icon}
+    </Button>
+  )
+ 
 };
