@@ -9,7 +9,6 @@ export const SlideIn = (props: { children: React.ReactNode }) => {
     if (ref.current !== null) {
       const observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
-          console.log(entry.isIntersecting);
           ref.current?.classList.add("animate-slide-up");
           ref.current?.classList.remove("opacity-0");
         }
