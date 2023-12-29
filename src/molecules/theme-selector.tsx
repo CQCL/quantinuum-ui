@@ -4,7 +4,6 @@ import React from "react";
 import { Button } from "src/atoms/button";
 import { theme as _theme } from "src/utils";
 
-type Mode = ReturnType<typeof _theme['get']>['mode']
 export const useTheme = () => {
 
   const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>(typeof window !== "undefined" ? _theme.get() : {mode: "dark", isDark: true});

@@ -22,6 +22,7 @@ export * from "./atoms/navigation-menu";
 export * from "./atoms/popover";
 export * from "./atoms/progress";
 export * from "./atoms/radio-group";
+export * from "./atoms/resizable";
 export * from "./atoms/scroll-area";
 export * from "./atoms/select";
 export * from "./atoms/separator";
@@ -42,3 +43,4 @@ export * from "./molecules/slide-in";
 export * from "./molecules/theme-selector";
 export * from "./tailwindTheme";
 export * from "./utils";
+
