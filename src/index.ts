@@ -19,6 +19,7 @@ export * from "./atoms/input";
 export * from "./atoms/label";
 export * from "./atoms/menubar";
 export * from "./atoms/navigation-menu";
+export * from "./atoms/pagination";
 export * from "./atoms/popover";
 export * from "./atoms/progress";
 export * from "./atoms/radio-group";
