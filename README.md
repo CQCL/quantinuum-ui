@@ -6,7 +6,7 @@ Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and rad
 ### Development
 
 ```bash
-npm run dev # Run storybook application to view components.
+npm run storybook # Run storybook application to view components.
 npm run build-storybook # Build storybook application as static HTML.
 npm run build # Build component library with rollup.
 ``` 

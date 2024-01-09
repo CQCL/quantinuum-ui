@@ -4,7 +4,7 @@
   "description": "Quantinuum design system.",
   "author": "aidan.keay@quantinuum.com",
   "scripts": {
-    "dev": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "rm -rf ./dist && rollup -c"
   },
