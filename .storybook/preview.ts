@@ -1,5 +1,5 @@
-import "../src/styles.css";
 import "../src/tokens.css";
+import "./styles.css";
 
 const preview = {
   parameters: {
