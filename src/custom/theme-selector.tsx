@@ -1,7 +1,7 @@
 'use client'
 import { ComputerIcon, MoonIcon, SunIcon } from "lucide-react";
 import React from "react";
-import { Button } from "src/atoms/button";
+import { Button } from "src/shadcn/button";
 import { theme as _theme } from "src/utils";
 
 export const useTheme = () => {
