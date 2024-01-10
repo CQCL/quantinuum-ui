@@ -1,12 +1,12 @@
+import * as React from "react"
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
   DotsHorizontalIcon,
 } from "@radix-ui/react-icons"
-import * as React from "react"
 
-import { ButtonProps, buttonVariants } from "src/shadcn/button"
-import { cn } from "src/utils"
+import { cn } from "src/shadcn"
+import { ButtonProps, buttonVariants } from "src/shadcn/ui/button"
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
@@ -111,6 +111,10 @@ const PaginationEllipsis = ({
 
 export {
   Pagination,
-  PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious
+  PaginationContent,
+  PaginationLink,
+  PaginationItem,
+  PaginationPrevious,
+  PaginationNext,
+  PaginationEllipsis,
 }
-
