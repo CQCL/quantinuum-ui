@@ -14,6 +14,7 @@ export * from "./shadcn/ui/collapsible";
 export * from "./shadcn/ui/command";
 export * from "./shadcn/ui/context-menu";
 export * from "./shadcn/ui/dialog";
+export * from './shadcn/ui/drawer';
 export * from "./shadcn/ui/dropdown-menu";
 export * from "./shadcn/ui/form";
 export * from "./shadcn/ui/hover-card";

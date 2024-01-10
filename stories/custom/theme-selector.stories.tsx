@@ -7,7 +7,6 @@ export function ThemeSelectorDemo() {
 
 const meta: Meta<typeof ThemeSelectorDemo> = {
   component: ThemeSelectorDemo,
-  title: "molecules/theme-selector",
 };
 
 export default meta;
