@@ -34,7 +34,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-      - name: Publish library to github packages
+      - name: Publish library to github packages and npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
