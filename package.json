@@ -2,7 +2,11 @@
   "name": "@cqcl/quantinuum-ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
-  "author": "aidan.keay@quantinuum.com",
+  "private": false,
+  "author": {
+    "name": "Aidan Keay",
+    "email": "aidan.keay@quantinuum.com"
+  },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -14,7 +18,8 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
   },
   "files": [
     "dist"
@@ -40,6 +45,7 @@
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@semantic-release/npm": "^11.0.2",
     "@storybook/addon-essentials": "^7.6.5",
     "@storybook/addon-interactions": "^7.6.5",
     "@storybook/addon-links": "^7.6.5",
