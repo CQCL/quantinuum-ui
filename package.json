@@ -18,8 +18,9 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/aidancq",
-    "tag": "latest"
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest",
+    "access": "public"
   },
   "files": [
     "dist"
