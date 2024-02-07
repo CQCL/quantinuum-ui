@@ -73,6 +73,7 @@
     "serve": "^14.2.1",
     "storybook": "^7.6.5",
     "tailwindcss-animate": "^1.0.7",
+    "tsup": "^8.0.1",
     "zod": "^3.22.4"
   },
   "dependencies": {
