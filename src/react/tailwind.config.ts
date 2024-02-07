@@ -1,5 +1,5 @@
 import { Config } from "tailwindcss";
-import { tailwindTheme } from "./tailwindTheme";
+import { tailwindTheme } from "../common/tailwindTheme";
 export default {
   content: ["./src/**/*.{ts,tsx}", "./stories/**/*.{ts,tsx}"],
   presets: [tailwindTheme],
