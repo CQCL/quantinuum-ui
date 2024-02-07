@@ -1,0 +1,15 @@
+html[data-theme="dark"],
+html[data-theme="light"],
+html {
+  /*****************************************************************************
+    * Font features used in this theme
+    */
+
+  --pst-header-height: 3.5rem;
+  --pst-header-article-height: calc(var(--pst-header-height) * 2 / 3);
+  --pst-sidebar-secondary: 12rem;
+
+  --pst-color-primary: hsl(var(--muted-foreground));
+  --pst-color-on-background: hsl(var(--muted-foreground));
+  --pst-color-text-base: hsl(var(--muted-foreground));
+}
