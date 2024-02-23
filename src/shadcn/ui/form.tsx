@@ -8,8 +8,9 @@ import {
   FieldValues,
   FormProvider,
   useFormContext,
+  useForm
 } from "react-hook-form";
-
+import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "src/utils";
 import { Label } from "./label";
 
@@ -174,4 +175,6 @@ export {
   FormLabel,
   FormMessage,
   useFormField,
+  useForm,
+  zodResolver
 };
