@@ -8,7 +8,7 @@ const SonnerDemo = () => {
         <div>
            
      
-        <sonner.Toaster >
+        <sonner.Toaster closeButton duration={1}>
 
         </sonner.Toaster>
          <Button onClick={() => sonner.toast.success('Success!')}>Show Toast</Button>   </div>
