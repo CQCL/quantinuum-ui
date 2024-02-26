@@ -1,16 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-
-import { Button, sonner } from "src";
-
+import { Button, SonnerToast } from "src";
+import sonner from 'sonner'
 const SonnerDemo = () => {
     return (
         <div>
-           
-     
-        <sonner.Toaster closeButton duration={1}>
+        <SonnerToast closeButton duration={1}>
 
-        </sonner.Toaster>
+        </SonnerToast>
          <Button onClick={() => sonner.toast.success('Success!')}>Show Toast</Button>   </div>
     );
 }
