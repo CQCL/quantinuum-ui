@@ -71,6 +71,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^22.0.12",
     "serve": "^14.2.1",
+    "sonner": "^1.4.1",
     "storybook": "^7.6.5",
     "tailwindcss-animate": "^1.0.7"
   },

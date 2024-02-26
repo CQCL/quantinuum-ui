@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import { Button, SonnerToast } from "src";
-import sonner from 'sonner'
+import * as sonner from 'sonner'
 const SonnerDemo = () => {
     return (
         <div>
