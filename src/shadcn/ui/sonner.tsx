@@ -20,8 +20,11 @@ export const SonnerToast = ({ ...props }: ToasterProps) => {
           actionButton:
             "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
           cancelButton:
-            "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-        },
+            "group-[.toaster]:bg-muted group-[.toaster]:text-muted-foreground bg-red",
+                
+                closeButton:
+                "group-[.toaster]:bg-muted group-[.toaster]:border-border group-[.toaster]:text-foreground bg-red group-[.toaster]:hover:text-background",
+                    },
       }}
       {...props}
     />

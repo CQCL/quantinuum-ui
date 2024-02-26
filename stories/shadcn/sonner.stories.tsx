@@ -5,7 +5,7 @@ import * as sonner from 'sonner'
 const SonnerDemo = () => {
     return (
         <div>
-        <SonnerToast closeButton duration={1}>
+        <SonnerToast closeButton duration={9000000}>
 
         </SonnerToast>
          <Button onClick={() => sonner.toast.success('Success!')}>Show Toast</Button>   </div>
