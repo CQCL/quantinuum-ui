@@ -8,7 +8,8 @@ import {
   FieldValues,
   FormProvider,
   useFormContext,
-  useForm
+  useForm,
+  useFieldArray
 } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "src/utils";
@@ -176,5 +177,6 @@ export {
   FormMessage,
   useFormField,
   useForm,
+  useFieldArray,
   zodResolver
 };
