@@ -43,6 +43,7 @@ export * from "./shadcn/ui/toggle";
 export * from "./shadcn/ui/toggle-group";
 export * from "./shadcn/ui/tooltip";
 export * from "./shadcn/ui/use-toast";
+export * from "./shadcn/ui/breadcrumb";
 export * from './shadcn/ui/sonner'
 export * from "./tailwindTheme";
 export * from "./utils";
