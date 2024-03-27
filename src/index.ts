@@ -21,6 +21,7 @@ export * from "./shadcn/ui/hover-card";
 export * from "./shadcn/ui/input";
 export * from "./shadcn/ui/label";
 export * from "./shadcn/ui/menubar";
+export * from "./shadcn/ui/multi-select";
 export * from "./shadcn/ui/navigation-menu";
 export * from "./shadcn/ui/pagination";
 export * from "./shadcn/ui/popover";
