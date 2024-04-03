@@ -1,4 +1,4 @@
-import type { Meta } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "src";
 
 const meta: Meta<typeof Tabs> = {
@@ -19,3 +19,7 @@ const meta: Meta<typeof Tabs> = {
 };
 
 export default meta;
+
+export const Default: StoryObj<typeof Tabs> = {
+  args: {},
+};
