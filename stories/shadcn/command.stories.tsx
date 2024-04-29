@@ -41,7 +41,7 @@ const CommandDemo = () => {
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
-          <CommandItem>
+          <CommandItem disabled >
             <PersonIcon className="mr-2 h-4 w-4" />
             <span>Profile</span>
             <CommandShortcut>⌘P</CommandShortcut>
