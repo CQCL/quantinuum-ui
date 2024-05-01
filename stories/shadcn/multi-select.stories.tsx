@@ -18,7 +18,6 @@ import {
 
 const Demo = (args: ComponentProps<typeof MultiSelect>) => {
   const [value, setValue] = React.useState(args.value);
-//   args.
   return (
     <MultiSelect onSearch={(v) => {
         setValue(v)
