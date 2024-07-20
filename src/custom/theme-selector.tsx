@@ -6,7 +6,7 @@ import { theme as _theme } from "src/utils";
 
 export const useTheme = () => {
 
-  const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>(typeof window !== "undefined" ? _theme.get() : {mode: "dark", isDark: true});
+  const [theme, _setTheme] = React.useState<ReturnType<typeof _theme['get']>>(typeof window !== "undefined" ? _theme.get() : {mode: "light", isDark: false});
   React.useEffect(() => {
     _theme.subscribe(() => {
       _setTheme(_theme.get());
