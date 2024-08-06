@@ -1,10 +1,9 @@
 
 import React, { ComponentProps } from 'react'
 import NextLink from 'next/link'
-import { QuantinuumLogo } from '../QuantinuumLogo'
-import { GithubIcon, SlackIcon } from 'lucide-react'
+import { QuantinuumLogo } from 'src'
 import { FaGithub, FaSlack, FaStackExchange } from 'react-icons/fa'
-import {IoLogoSlack} from 'react-icons/io'
+
 import { MobileMenu } from './MobileMenu'
 import {
   NavigationMenu,
@@ -86,18 +85,15 @@ export const DocsNavigationBar = (props: {
 
         <div className="flex items-center">
           <div className="flex items-center gap-3">
-            <Link href="https://github.com/CQCL/tket" target="_blank">
-              <FaGithub className="text-foreground hover:text-muted-foreground h-[1.5rem] w-[1.5rem] transition" />
-            </Link>
-            <Link href="https://tketusers.slack.com/" target="_blank">
-              <FaSlack className="text-foreground hover:text-muted-foreground h-6 w-6 transition" />
-            </Link>
-            <Link
-              href="https://quantumcomputing.stackexchange.com/questions/tagged/pytket"
-              target="_blank"
-            >
-              <FaStackExchange className="text-foreground hover:text-muted-foreground h-5 w-5 transition"></FaStackExchange>
-            </Link>
+          {props.navIconLinks.map(link => {
+                return <Link href={link.href} target='_blank' key={link.title}>
+               <img src={link.iconImageURL} className='flex-shrink-0 min-w-6 max-w-6 min-h-6 max-h-6 h-6 w-6 hover:opacity-70 transition'></img>
+             </Link>
+         
+          
+        })}
+           
+           
            
           </div>
         </div>
