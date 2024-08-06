@@ -1,5 +1,7 @@
 export * from "./custom/slide-in";
 export * from "./custom/theme-selector";
+export * from "./custom/Footer";
+export * from "./custom/QuantinuumLogo";
 export * from "./shadcn/ui/accordion";
 export * from "./shadcn/ui/alert";
 export * from "./shadcn/ui/alert-dialog";
