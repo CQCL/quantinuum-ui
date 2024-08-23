@@ -1,11 +1,11 @@
-name: Release library
+name: Pre Release library
 on:
   push:
     branches:
       - beta
       
 jobs:
-  release_component_library:
+  prerelase_flow:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
