@@ -33,7 +33,7 @@
 
 :root.theme-mode-dark {
   color-scheme: dark;
-  --background: 240 10% 3.9%;
+  --background: 240 10% 20%;
   --foreground: 0 0% 98%;
 
   --card: 240 10% 3.9%;
