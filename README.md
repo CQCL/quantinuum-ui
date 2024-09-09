@@ -12,7 +12,7 @@ npm run build # Build component library with rollup.
 ``` 
 
 ### Design Tokens
-CSS variables are declared in `src/tokens.css`. Dark mode is toggled by the presence of the class `.theme-mode-dark` on the root document element (`<html />`).
+CSS variables are declared in `src/tokens.css`. Dark mode is enabled by the presence of the attribute `data-theme` higher up in the tree.
 
 
 
