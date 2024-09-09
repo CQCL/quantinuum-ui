@@ -37,6 +37,7 @@ const subscribeToTheme = (callback: (state: {isDark: boolean, mode: Mode}) => vo
     const theme = getTheme();
     callback(theme);
   }
+  _callback()
   window.addEventListener("storage", _callback);
   window
     .matchMedia("(prefers-color-scheme: dark)")
