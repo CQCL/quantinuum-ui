@@ -1,0 +1,27 @@
+name: Pre Release library
+on:
+  push:
+    branches:
+        - '*'         # matches every branch that doesn't contain a '/'
+        - '*/*'       # matches every branch containing a single '/'
+        - '**'        # matches every branch
+        - '!main'   # excludes main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Build library
+        run: npm run build 
+
+      - name: Publish library to github packages and npm
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
