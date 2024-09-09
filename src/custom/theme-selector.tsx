@@ -4,7 +4,7 @@ import React from "react";
 import { Button } from "src/shadcn/ui/button";
 import { getTheme, subscribeToTheme, setTheme } from "src/utils/darkMode";
 
-export const useMode = () => {
+export const useTheme = () => {
   const [theme, _setLocalTheme] = React.useState(getTheme());
 
   React.useEffect(() => {
@@ -16,7 +16,7 @@ export const useMode = () => {
   return { theme, setMode: (_mode: typeof theme['mode']) => setTheme(_mode) }
 }
 
-export const ThemeSelector = ({theme, setMode}: ReturnType<typeof useMode>) => {
+export const ThemeSelector = ({theme, setMode}: ReturnType<typeof useTheme>) => {
 
   const stateMap = {
     "light": {
