@@ -5,18 +5,18 @@ import { Button } from "src/shadcn/ui/button";
 import { getTheme, subscribeToTheme, setTheme } from "src/utils/darkMode";
 
 export const useMode = () => {
-  const [mode, _setTheme] = React.useState(getTheme().mode);
+  const [theme, _setLocalTheme] = React.useState(getTheme());
 
   React.useEffect(() => {
     subscribeToTheme((theme) => {
-      _setTheme(theme.mode)
+      _setLocalTheme(theme)
       document.body.setAttribute("data-theme",  theme.isDark ? "dark" : 'light') 
     })
   }, [])
-  return { mode, setMode: (_mode: typeof mode) => setTheme(_mode) }
+  return { theme, setMode: (_mode: typeof theme['mode']) => setTheme(_mode) }
 }
 
-export const ThemeSelector = ({mode, setMode}: ReturnType<typeof useMode>) => {
+export const ThemeSelector = ({theme, setMode}: ReturnType<typeof useMode>) => {
 
   const stateMap = {
     "light": {
@@ -28,14 +28,14 @@ export const ThemeSelector = ({mode, setMode}: ReturnType<typeof useMode>) => {
     "system": {
       icon: <ComputerIcon className="h-4 w-4" />,
     },
-  } satisfies Record<typeof mode, unknown>
+  } satisfies Record<typeof theme['mode'], unknown>
   return (
-    <Button className="aspect-square" variant="outline" size="icon" aria-label={`mode-${mode}`} onClick={() => {
-      if (mode === "dark") setMode('light')
-      if (mode === "light") setMode("system")
-      if (mode === "system") setMode("dark")
+    <Button className="aspect-square" variant="outline" size="icon" aria-label={`mode-${theme.mode}`} onClick={() => {
+      if (theme.mode === "dark") setMode('light')
+      if (theme.mode === "light") setMode("system")
+      if (theme.mode === "system") setMode("dark")
     }}>
-      {stateMap[mode].icon}
+      {stateMap[theme.mode].icon}
     </Button>
   )
  
