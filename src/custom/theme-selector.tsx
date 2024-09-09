@@ -8,10 +8,7 @@ export const useTheme = () => {
   const [theme, _setLocalTheme] = React.useState(getTheme());
 
   React.useEffect(() => {
-    subscribeToTheme((theme) => {
-      _setLocalTheme(theme)
-      document.body.setAttribute("data-theme",  theme.isDark ? "dark" : 'light') 
-    })
+    subscribeToTheme((theme) => _setLocalTheme(theme))
   }, [])
   return { theme, setMode: (_mode: typeof theme['mode']) => setTheme(_mode) }
 }
