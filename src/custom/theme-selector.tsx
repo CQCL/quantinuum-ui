@@ -5,7 +5,7 @@ import { Button } from "src/shadcn/ui/button";
 import { getTheme, subscribeToTheme, setTheme } from "src/utils/darkMode";
 
 export const useTheme = () => {
-  const [theme, _setLocalTheme] = React.useState(getTheme());
+  const [theme, _setLocalTheme] = React.useState(typeof window !== "undefined" ? getTheme() : {mode: 'dark' as const, isDark: true});
 
   React.useEffect(() => {
     subscribeToTheme((theme) => _setLocalTheme(theme))
