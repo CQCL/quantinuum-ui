@@ -31,7 +31,7 @@
   --radius: 0.5rem;
 }
 
-:root.theme-mode-dark {
+:root [data-theme="dark"] {
   color-scheme: dark;
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;

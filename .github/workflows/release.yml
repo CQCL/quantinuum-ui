@@ -14,28 +14,27 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4 
+      - uses: actions/configure-pages@v2
+      - uses: actions/setup-node@v4
+        with:
+            node-version: 20
+            cache: 'npm'
+      - run: npm ci
+      - run: npm run build && npm run build-storybook
 
-      - name: Install NPM dependencies
-        run: npm ci
-
-      - name: Build library and storybook
-        run: npm run build && npm run build-storybook
-
-      - name: Setup pages.
-        uses: actions/configure-pages@v2
       - name: Upload artifact.
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./storybook-static/
+
       - name: Publish storybook build to github pages
         id: deployment
         uses: actions/deploy-pages@v1
 
-      - name: Publish library to github packages and npm
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
