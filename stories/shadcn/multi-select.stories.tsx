@@ -19,7 +19,7 @@ import {
 const Demo = (args: ComponentProps<typeof MultiSelect>) => {
   const [value, setValue] = React.useState(args.value);
   return (
-    <MultiSelect onSearch={(v) => {
+    <MultiSelect value={value} onValueChange={(v) => {
         setValue(v)
     }}>
     <MultiSelectTrigger className="w-96">
