@@ -3,7 +3,7 @@ import { cn } from 'src'
 import React from 'react'
 import { CodeCopy } from './CodeCopy'
 
-const Title = React.forwardRef<
+const DocsHeaderTitle = React.forwardRef<
 HTMLHeadingElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
@@ -16,9 +16,9 @@ return (
   </h1>
 )
 })
-Title.displayName = 'Title'
+DocsHeaderTitle.displayName = 'DocsHeaderTitle'
 
-const Subtitle = React.forwardRef<
+const DocsHeaderSubtitle = React.forwardRef<
 HTMLHeadingElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
@@ -31,9 +31,9 @@ return (
   </h2>
 )
 })
-Subtitle.displayName = 'Subtitle'
+DocsHeaderSubtitle.displayName = 'DocsHeaderSubtitle'
 
-const Left = React.forwardRef<
+const DocsHeaderLeft = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
@@ -42,9 +42,9 @@ React.InputHTMLAttributes<HTMLParagraphElement>
    <div className="mb-4 mt-0 md:mt-6 flex flex-col" ref={ref}>{props.children}</div></div>
  
 })
-Left.displayName = 'Left'
+DocsHeaderLeft.displayName = 'DocsHeaderLeft'
 
-const Right = React.forwardRef<
+const DocsHeaderRight = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
@@ -52,14 +52,14 @@ React.InputHTMLAttributes<HTMLParagraphElement>
   return <div className="mt-0 mr-10 hidden lg:flex md:justify-end" ref={ref}>{props.children}</div>
  
 })
-Right.displayName = 'Right'
+DocsHeaderRight.displayName = 'DocsHeaderRight'
 
 
 
 
 // mt-4 flex flex-col max-w-[32rem] gap-3
 
-const Wrapper  = React.forwardRef<
+const DocsHeaderWrapper  = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
@@ -67,9 +67,8 @@ React.InputHTMLAttributes<HTMLParagraphElement>
       {props.children}</div>
  
 })
-Wrapper.displayName = 'Wrapper'
+DocsHeaderWrapper.displayName = 'DocsHeaderWrapper'
 
-const LeftTitle = Title
-const LeftSubtitle = Subtitle;
 
-export {Wrapper, Right, Left, LeftTitle, LeftSubtitle, CodeCopy}
+
+export {DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy}

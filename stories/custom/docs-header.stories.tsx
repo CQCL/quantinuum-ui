@@ -1,18 +1,18 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Wrapper, Right, Left, CodeCopy, LeftTitle, LeftSubtitle } from "src/custom/docs";
+import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "src/custom/docs";
 import { NexusLogo } from "./NexusLogo";
 import { Button } from "src";
 import { RocketIcon } from "lucide-react";
 
 
 export function DocsHeaderDemo() {
-  return <Wrapper>
-    <Left>  
+  return <DocsHeaderWrapper>
+    <DocsHeaderLeft>  
         <NexusLogo
           variant="horizontal"
           className="w-[18rem] md:w-[23rem]"
         />
-        <LeftSubtitle>The Full Stack Quantum Computing Platform</LeftSubtitle>
+        <DocsHeaderSubtitle>The Full Stack Quantum Computing Platform</DocsHeaderSubtitle>
         <div className=" mt-4 flex flex-col max-w-[32rem] gap-3">
         <CodeCopy textToCopy="pip install qnexus"></CodeCopy>
         <Button
@@ -25,9 +25,9 @@ export function DocsHeaderDemo() {
             </a>
         </Button>
         </div>
-    </Left>
+    </DocsHeaderLeft>
 
-  <Right>
+  <DocsHeaderRight>
     <img
       className="rounded-xl overflow-hidden dark:hidden brightness-110"
       src="nexusw.png"
@@ -45,8 +45,8 @@ export function DocsHeaderDemo() {
       alt=""
     />
 
-    </Right>
- </Wrapper>
+    </DocsHeaderRight>
+ </DocsHeaderWrapper>
 }
 
 const meta: Meta<typeof DocsHeaderDemo> = {
