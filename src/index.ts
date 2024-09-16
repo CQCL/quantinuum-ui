@@ -48,5 +48,5 @@ export * from "./shadcn/ui/breadcrumb";
 export * from './shadcn/ui/sonner'
 export * from "./tailwindTheme";
 export * from "./utils";
-
+export * from './custom/docs'
 
