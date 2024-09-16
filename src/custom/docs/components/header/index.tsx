@@ -37,7 +37,9 @@ const Left = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
-  return <div className="mb-4 mt-0 md:mt-6 flex flex-col " ref={ref}>{props.children}</div>
+
+  return<div className="relative mx-auto flex flex-grow flex-wrap flex-col py-4">
+   <div className="mb-4 mt-0 md:mt-6 flex flex-col" ref={ref}>{props.children}</div></div>
  
 })
 Left.displayName = 'Left'
@@ -62,7 +64,7 @@ HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
   return  <div className="flex w-full my-4" ref={ref}>
-      <div className="relative mx-auto flex flex-grow flex-wrap flex-col py-4">{props.children}</div></div>
+      {props.children}</div>
  
 })
 Wrapper.displayName = 'Wrapper'

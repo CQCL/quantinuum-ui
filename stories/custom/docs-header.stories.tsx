@@ -8,7 +8,6 @@ import { RocketIcon } from "lucide-react";
 export function DocsHeaderDemo() {
   return <Wrapper>
     <Left>  
-        {/* <LeftTitle>Quantinuum Nexus</LeftTitle> */}
         <NexusLogo
           variant="horizontal"
           className="w-[18rem] md:w-[23rem]"
