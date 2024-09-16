@@ -13,8 +13,6 @@ export function DocsHeaderDemo() {
           className="w-[18rem] md:w-[23rem]"
         />
         <LeftSubtitle>The Full Stack Quantum Computing Platform</LeftSubtitle>
-     
-
         <div className=" mt-4 flex flex-col max-w-[32rem] gap-3">
         <CodeCopy textToCopy="pip install qnexus"></CodeCopy>
         <Button
