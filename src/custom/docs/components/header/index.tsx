@@ -24,7 +24,7 @@ React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
 return (
   <h2
-    className={cn('text-muted-foreground mt-5 mb-4 text-2xl tracking-tighter', className)}
+    className={cn('text-muted-foreground mt-5 mb-8 text-2xl tracking-tighter', className)}
     ref={ref}
   >
     {props.children}
