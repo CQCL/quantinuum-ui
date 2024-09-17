@@ -1,5 +1,5 @@
 import { QuantinuumLogo } from "../../QuantinuumLogo";
-
+import { Separator } from "src";
 export const Footer = (props: { subtitle: string, columns: {
     title: string;
     items: {
@@ -8,6 +8,12 @@ export const Footer = (props: { subtitle: string, columns: {
     }[];
 }[] }) => {
   return (
+    <div>
+
+      <div className="my-24"></div>
+        <Separator/>
+        <div className="my-12"></div>
+
     <footer className="text-muted-foreground flex w-full flex-col justify-between md:items-start lg:flex-row ">
       <div className="mb-12 md:mb-0">
         <div className="-mt-4">
@@ -49,5 +55,6 @@ export const Footer = (props: { subtitle: string, columns: {
         })}
       </div>
     </footer>
+    </div>
   )
 }
