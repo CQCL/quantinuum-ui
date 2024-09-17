@@ -25,7 +25,7 @@ const cardSchema = z.array(
 export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageComponent: typeof NextImage | typeof regularLink  }) => {
 
   return (
-    <div className="shadow-lg rounded-xl grid grid-cols-1 items-stretch md:grid-cols-3 ">
+    <section className="shadow-lg rounded-xl grid grid-cols-1 items-stretch md:grid-cols-3 ">
       {props.cards.map((item, idx, arr) => {
         return (
           <Card
@@ -82,6 +82,6 @@ export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageCompo
           </Card>
         )
       })}
-    </div>
+    </section>
   )
 }

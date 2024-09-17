@@ -55,16 +55,12 @@ React.InputHTMLAttributes<HTMLParagraphElement>
 DocsHeaderRight.displayName = 'DocsHeaderRight'
 
 
-
-
-// mt-4 flex flex-col max-w-[32rem] gap-3
-
 const DocsHeaderWrapper  = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
-  return  <div className="flex w-full my-4 mb-16" ref={ref}>
-      {props.children}</div>
+  return  <header className="flex w-full my-4 mb-16" ref={ref}>
+      {props.children}</header>
  
 })
 DocsHeaderWrapper.displayName = 'DocsHeaderWrapper'
