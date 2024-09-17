@@ -8,7 +8,7 @@ export const Footer = (props: { subtitle: string, columns: {
     }[];
 }[] }) => {
   return (
-    <div>
+    <div className="mb-32">
 
       <div className="my-24"></div>
         <Separator/>
