@@ -22,7 +22,7 @@ export const NavBar = (props: {
           <div className='block md:hidden mr-3'>
             <MobileMenu {...props}/>
           </div>
-          <div className="whitespace-nowrap flex items-center  gap-2">
+          <div className="whitespace-nowrap flex items-center gap-2">
           <a href="https://docs.quantinuum.com/" aria-label='Quantinuum Docs' title="Quantinuum Docs"   className='hover:cursor-pointer hover:opacity-50 transition'>
             <div className='hidden sm:block'><QuantinuumLogo />
             </div>
@@ -50,7 +50,7 @@ export const NavBar = (props: {
             })}
           </div>
           <div className='w-px h-6 bg-muted-foreground/50'></div>
-          <ModeSelector />
+          {/* <ModeSelector /> */}
         </div>
       </div>
     </div>
