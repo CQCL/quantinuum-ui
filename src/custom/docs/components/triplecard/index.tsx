@@ -51,7 +51,7 @@ export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageCompo
                   alt={item.image_description}
                   height={300}
                   src={item.image_link}
-                  width={200}
+                  width={300}
                   style={{ objectFit: 'contain' }}
                   priority
                 /> 
