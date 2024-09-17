@@ -1,4 +1,6 @@
-export const Footer = (props: { logo: JSX.Element, subtitle: string, columns: {
+import { QuantinuumLogo } from "../../QuantinuumLogo";
+
+export const Footer = (props: { subtitle: string, columns: {
     title: string;
     items: {
         name: string;
@@ -10,7 +12,7 @@ export const Footer = (props: { logo: JSX.Element, subtitle: string, columns: {
       <div className="mb-12 md:mb-0">
         <div className="-mt-4">
           <a href="https://www.quantinuum.com/" target='_blank' className='hover:opacity-75 transition'>
-          {props.logo}
+          <QuantinuumLogo/>
           </a>
         </div>
         <p className="max-w-[24rem] text-xs leading-5">
