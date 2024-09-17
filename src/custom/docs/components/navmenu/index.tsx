@@ -31,9 +31,9 @@ export const NavBar = (props: {
               <QuantinuumIdent/>
             </div>
             </a>
-            <div className="text-muted-foreground text-xs font-medium flex items-center gap-1.5">
+            {props.navProductName !== '' ? <div className="text-muted-foreground text-xs font-medium flex items-center gap-1.5">
               <div className='mx-0.5 text-muted-foreground/50'>|</div><div>{props.navProductName}</div>
-            </div>
+            </div> : null}
           </div>
           <Link href="/" className="ml-4 mr-4 flex items-center space-x-2">
             <span className="hidden font-bold">Quantinuum</span>
