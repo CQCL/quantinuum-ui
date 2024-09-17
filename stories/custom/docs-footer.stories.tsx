@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import {Footer } from "src/custom/docs";
+import {DocsFooter } from "src";
 import { QuantinuumLogo } from "src/custom/docs/QuantinuumLogo";
 
  const footerConfig = {
@@ -65,7 +65,7 @@ import { QuantinuumLogo } from "src/custom/docs/QuantinuumLogo";
   }
 
 export function DocsNavDemo() {
-  return <Footer {...footerConfig} />;
+  return <DocsFooter {...footerConfig} />;
 }
 
 const meta: Meta<typeof DocsNavDemo> = {

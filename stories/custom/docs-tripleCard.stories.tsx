@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ComponentProps } from "react";
-import { TripleCard } from "src/custom/docs";
-import { QuantinuumLogo } from "src/custom/docs/QuantinuumLogo";
+import { DocsTripleCard } from "src";
 
  const tripleCardProps = [
     {
@@ -66,7 +65,7 @@ import { QuantinuumLogo } from "src/custom/docs/QuantinuumLogo";
 
 
 export function DocsTripleCardDemo() {
-  return <TripleCard cards={tripleCardProps} imageComponent={(props: ComponentProps<'a'>) => <a {...props}></a>} />;
+  return <DocsTripleCard cards={tripleCardProps} imageComponent={(props: ComponentProps<'a'>) => <a {...props}></a>} />;
 }
 
 const meta: Meta<typeof DocsTripleCardDemo> = {

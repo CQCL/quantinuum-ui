@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import {NavBar } from "src/custom/docs";
+import {DocsNavBar } from "src";
 const navConfig = {
     navTextLinks: [
       {
@@ -52,7 +52,7 @@ const navConfig = {
   }
 
 export function DocsNavDemo() {
-  return <NavBar {...navConfig }activePath="/" />;
+  return <DocsNavBar {...navConfig }activePath="/" />;
 }
 
 const meta: Meta<typeof DocsNavDemo> = {
