@@ -63,7 +63,7 @@ const DocsHeaderWrapper  = React.forwardRef<
 HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
-  return  <div className="flex w-full my-4" ref={ref}>
+  return  <div className="flex w-full my-4 mb-16" ref={ref}>
       {props.children}</div>
  
 })
