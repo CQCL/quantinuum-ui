@@ -11,6 +11,7 @@ import { NavConfig } from './schema'
 export const NavBar = (props: {
   linkComponent?: Link
   activePath: string
+  enableModeSelector?: boolean
 } & NavConfig) => {
   const Link = props.linkComponent
     ? props.linkComponent
@@ -49,8 +50,8 @@ export const NavBar = (props: {
              </Link>
             })}
           </div>
-          <div className='w-px h-6 bg-muted-foreground/50'></div>
-          {/* <ModeSelector /> */}
+     
+          {props.enableModeSelector ?  <>     <div className='w-px h-6 bg-muted-foreground/50'></div><ModeSelector /> </>: null}
         </div>
       </div>
     </div>
