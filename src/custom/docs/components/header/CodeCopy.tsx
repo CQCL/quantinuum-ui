@@ -1,9 +1,9 @@
 'use client'
 import React from "react"
 
-import {Button} from 'src'
+import {Button, cn} from 'src'
 import { Check, Copy } from "lucide-react"
-export const CodeCopy = (props: {textToCopy: string}) => {
+export const CodeCopy = (props: {textToCopy: string, className?: string}) => {
 
     const [copied, setHasCopied] = React.useState(false)
  
@@ -13,7 +13,7 @@ export const CodeCopy = (props: {textToCopy: string}) => {
         <Button
         variant="ghost"
         size="icon"
-        className={`${copied ? ' hover:bg-transparent' : 'hover:bg-background/50 hover:text-foreground/75'} ml-1`}
+        className={cn(`${copied ? ' hover:bg-transparent' : 'hover:bg-background/50 hover:text-foreground/75'} ml-1`, props.className)}
         onClick={() => {
           window.navigator.clipboard.writeText(props.textToCopy)
           setHasCopied(true)
