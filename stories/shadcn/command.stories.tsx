@@ -21,38 +21,38 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const CommandDemo = () => {
   return (
-    <Command className="rounded-lg border shadow-md">
-      <CommandInput placeholder="Type a command or search..." />
+    <Command className='rounded border shadow-md'>
+      <CommandInput placeholder='Type a command or search...' />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading="Suggestions">
+        <CommandGroup heading='Suggestions'>
           <CommandItem>
-            <CalendarIcon className="mr-2 h-4 w-4" />
+            <CalendarIcon className='mr-2 h-4 w-4' />
             <span>Calendar</span>
           </CommandItem>
           <CommandItem>
-            <FaceIcon className="mr-2 h-4 w-4" />
+            <FaceIcon className='mr-2 h-4 w-4' />
             <span>Search Emoji</span>
           </CommandItem>
           <CommandItem>
-            <RocketIcon className="mr-2 h-4 w-4" />
+            <RocketIcon className='mr-2 h-4 w-4' />
             <span>Launch</span>
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
-        <CommandGroup heading="Settings">
-          <CommandItem disabled >
-            <PersonIcon className="mr-2 h-4 w-4" />
+        <CommandGroup heading='Settings'>
+          <CommandItem disabled>
+            <PersonIcon className='mr-2 h-4 w-4' />
             <span>Profile</span>
             <CommandShortcut>⌘P</CommandShortcut>
           </CommandItem>
           <CommandItem>
-            <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
+            <EnvelopeClosedIcon className='mr-2 h-4 w-4' />
             <span>Mail</span>
             <CommandShortcut>⌘B</CommandShortcut>
           </CommandItem>
           <CommandItem>
-            <GearIcon className="mr-2 h-4 w-4" />
+            <GearIcon className='mr-2 h-4 w-4' />
             <span>Settings</span>
             <CommandShortcut>⌘S</CommandShortcut>
           </CommandItem>
