@@ -2,7 +2,7 @@ import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 export const tailwindTheme = {
-  darkMode: ['selector', '[data-theme="dark"]'],
+  darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     container: {
       center: true,
@@ -13,6 +13,7 @@ export const tailwindTheme = {
     },
     extend: {
       colors: {
+        quantinuum: "hsl(var(--quantinuum))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
