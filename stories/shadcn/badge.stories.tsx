@@ -8,7 +8,7 @@ export function BadgeDemo() {
       <Badge variant='destructive'>Destructive</Badge>
       <Badge variant='outline'>Outlined</Badge>
       <Badge variant='secondary'>Secondary</Badge>
-      <Badge variant='secondary' className='bg-quantinuum'>
+      <Badge variant='secondary' className='text-background bg-quantinuum'>
         Secondary
       </Badge>
     </div>
