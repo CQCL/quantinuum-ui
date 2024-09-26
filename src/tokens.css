@@ -25,7 +25,7 @@
   --chart-4: 43 74% 66%;
   --chart-5: 27 87% 67%;
   /** Quantinuum brand color **/
-  --quantinuum: 170 54% 41%;
+  --quantinuum: 168 50% 77%;
 }
 
 :root [data-theme="dark"] {
@@ -53,5 +53,5 @@
   --chart-3: 30 80% 55%;
   --chart-4: 280 65% 60%;
   --chart-5: 340 75% 55%;
-  --quantinuum: 170 40% 61%;
+  --quantinuum: 168 50% 77%;
 }
