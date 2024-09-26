@@ -2,7 +2,7 @@ import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 export const tailwindTheme = {
-  darkMode: ['class', '[data-theme="dark"]'],
+  darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
     container: {
       center: true,
