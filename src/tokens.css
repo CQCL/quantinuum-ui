@@ -24,12 +24,14 @@
   --chart-3: 197 37% 24%;
   --chart-4: 43 74% 66%;
   --chart-5: 27 87% 67%;
+  /** Quantinuum brand color **/
+  --quantinuum: 170, 54%, 41%;
 }
 
 :root [data-theme="dark"] {
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;
-  --card: 240 10% 8%;
+  --card: 240 10% 10%;
   --card-foreground: 0 0% 98%;
   --popover: 240 5.9% 10%;
   --popover-foreground: 0 0% 98%;
