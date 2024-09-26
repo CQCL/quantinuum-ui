@@ -1,6 +1,6 @@
-import { LucideIcon } from 'lucide-react'
-import React from 'react'
-import { cn } from 'src'
+import { LucideIcon } from "lucide-react";
+import React from "react";
+import { cn } from "src";
 
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -9,16 +9,16 @@ const CardTitle = React.forwardRef<
   return (
     <p
       className={cn(
-        'mb-1 mt-4 text-[1.45rem] font-semibold tracking-tight',
+        "mb-1 mt-4 text-[1.45rem] font-semibold tracking-tight",
         className
       )}
       ref={ref}
     >
       {props.children}
     </p>
-  )
-})
-CardTitle.displayName = 'CardTitle'
+  );
+});
+CardTitle.displayName = "CardTitle";
 
 const CardSubtitle = React.forwardRef<
   HTMLParagraphElement,
@@ -26,14 +26,14 @@ const CardSubtitle = React.forwardRef<
 >(({ className, type, ...props }, ref) => {
   return (
     <p
-      className={cn('text-muted-foreground mb-6 mt-4 text-sm', className)}
+      className={cn("text-muted-foreground mb-6 mt-4 text-sm", className)}
       ref={ref}
     >
       {props.children}
     </p>
-  )
-})
-CardSubtitle.displayName = 'CardSubtitle'
+  );
+});
+CardSubtitle.displayName = "CardSubtitle";
 
 const Card = React.forwardRef<
   HTMLParagraphElement,
@@ -42,16 +42,16 @@ const Card = React.forwardRef<
   return (
     <div
       className={cn(
-        ' border-border flex w-full flex-col justify-between rounded-xl overflow-hidden border p-7 pb-9 dark:bg-muted/25 bg-background',
+        " border-border flex w-full flex-col justify-between rounded-xl overflow-hidden border p-7 pb-9 dark:bg-muted/25 bg-card",
         className
       )}
       ref={ref}
     >
       <div> {props.children}</div>
     </div>
-  )
-})
-Card.displayName = 'Card'
+  );
+});
+Card.displayName = "Card";
 
 const IconBar = React.forwardRef<
   HTMLParagraphElement,
@@ -59,13 +59,13 @@ const IconBar = React.forwardRef<
 >(({ className, type, ...props }, ref) => {
   return (
     <div
-      className={cn('mb-4 flex items-center justify-between', className)}
+      className={cn("mb-4 flex items-center justify-between", className)}
       ref={ref}
     >
       {props.children}
     </div>
-  )
-})
-IconBar.displayName = 'IconBar'
+  );
+});
+IconBar.displayName = "IconBar";
 
-export { Card, CardTitle, CardSubtitle }
+export { Card, CardTitle, CardSubtitle };
