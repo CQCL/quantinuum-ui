@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --background: 0 0% 98%;
   --foreground: 240 5.9% 10%;
   --card: 0 0% 100%;
@@ -29,6 +30,7 @@
 }
 
 :root [data-theme="dark"] {
+  color-scheme: dark;
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;
   --card: 240 10% 10%;
