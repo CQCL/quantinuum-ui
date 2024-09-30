@@ -8,7 +8,7 @@ const FooterContent = FooterSchema.parse(text);
 const FooterConfig = {
   columns: [
     {
-    name: "Products",
+      name: "Products",
       items: [
         {
             name: "H-Series",
