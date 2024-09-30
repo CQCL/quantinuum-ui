@@ -1,12 +1,11 @@
 import { QuantinuumLogo } from "../../QuantinuumLogo";
 import { Separator } from "src";
-export const Footer = (props: { subtitle: string, columns: {
-    title: string;
-    items: {
-        name: string;
-        href: string;
-    }[];
-}[] }) => {
+import { FooterSchema } from "./footer.schema";
+import text from "./text.json"
+
+const FooterContent = FooterSchema.parse(text);
+
+export const Footer = () => {
   return (
     <div className="mb-24">
 
@@ -30,7 +29,7 @@ export const Footer = (props: { subtitle: string, columns: {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-24">
-        {props.columns.map((col) => {
+        {FooterContent.map((col) => {
           return (
             <div key={col.title} className="flex flex-col md:items-end">
               <span className="text-foreground text-left text-[0.675rem] font-semibold uppercase tracking-wide md:text-right">
