@@ -1,7 +1,7 @@
 import { QuantinuumLogo } from "../../QuantinuumLogo";
 import { Separator } from "src";
 
-const FooterConfig = {
+const footerConfig = {
   columns: [
     {
       name: "Products",
@@ -74,7 +74,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-24">
-        {FooterContent.map((col) => {
+        {footerConfig.map((col) => {
           return (
             <div key={col.title} className="flex flex-col md:items-end">
               <span className="text-foreground text-left text-[0.675rem] font-semibold uppercase tracking-wide md:text-right">
