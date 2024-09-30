@@ -19,6 +19,10 @@
       {
         "name": "alpha",
         "prerelease": true
+      },
+      {
+        "name": "newcolors2",
+        "prerelease": true
       }
     ]
   },
