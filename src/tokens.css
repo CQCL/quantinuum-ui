@@ -8,6 +8,7 @@
 
   color-scheme: light;
   --background: 0 0% 100%;
+  --background-sunk: 0 0% 98%;
   --foreground: 0 0% 3.9%;
   --card: 0 0% 100%;
   --card-foreground: 0 0% 3.9%;
@@ -37,6 +38,7 @@
 :root [data-theme="dark"] {
   color-scheme: dark;
   --background: 0 0% 3.9%;
+  --background-sunk: 0 0% 0%;
   --foreground: 0 0% 98%;
   --card: 0 0% 3.9%;
   --card-foreground: 0 0% 98%;
