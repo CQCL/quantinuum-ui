@@ -1,9 +1,5 @@
 import { QuantinuumLogo } from "../../QuantinuumLogo";
 import { Separator } from "src";
-import { FooterSchema } from "./footer.schema";
-import text from "./text.json"
-
-const FooterContent = FooterSchema.parse(text);
 
 const FooterConfig = {
   columns: [
