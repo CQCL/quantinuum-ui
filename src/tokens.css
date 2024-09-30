@@ -37,16 +37,16 @@
 
 :root [data-theme="dark"] {
   color-scheme: dark;
-  --background-sunk: 240 10% 6%;
-  --background: 240 3.7% 12%;
+  --background-sunk: 240 10% 3%;
+  --background: 240 3.7% 8%;
   --foreground: 0 0% 100%;
-  --card: 240 3.7% 12%;
+  --card: 240 3.7% 8%;
   --card-foreground: 0 0% 100%;
-  --popover: 240 3.7% 12%;
+  --popover: 240 3.7% 8%;
   --popover-foreground: 0 0% 100%;
   --primary: 0 0% 100%;
-  --primary-foreground: 240 3.7% 12%;
-  --secondary: 240 3.7% 12%;
+  --primary-foreground: 240 3.7% 8%;
+  --secondary: 240 3.7% 8%;
   --secondary-foreground: 0 0% 100%;
   --muted: 240 5.3% 26.1%;
   --muted-foreground: 240 4.9% 83.9%;
