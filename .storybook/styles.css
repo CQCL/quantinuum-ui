@@ -7,8 +7,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background-sunk text-foreground;
     @apply font-sans;
-    @apply antialiased
+    @apply antialiased;
   }
 }
