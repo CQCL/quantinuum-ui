@@ -5,6 +5,55 @@ import text from "./text.json"
 
 const FooterContent = FooterSchema.parse(text);
 
+const FooterConfig = {
+  columns: [
+    {
+    name: "Products",
+      items: [
+        {
+            name: "H-Series",
+            href: "https://docs.quantinuum.com/h-series"
+        },
+        {
+            name: "Nexus",
+            href: "https://docs.quantinuum.com/nexus"
+        },
+        {
+            name: "InQuanto",
+            href: "https://docs.quantinuum.com/inquanto"
+        }
+      ]
+    }, {
+      name: "Opensource",
+      items: [
+        {
+            name: "TKET",
+            href: "https://docs.quantinuum.com/tket"
+        },
+        {
+            name: "\u03BBambeq",
+            href: "https://docs.quantinuum.com/lambeq"
+        }
+      ]
+    },{
+      name: "Quantinuum",
+      items: [
+        {
+          name: "About", 
+          href: "https://www.quantinuum.com/about",
+        }, {
+          name: "Careers",
+          href: "https://www.quantinuum.com/publications",
+        },{
+          name: "Events", 
+          href: "https://www.quantinuum.com/events"
+        }
+      ]
+    }
+  ],
+  subtitle: "",
+}
+
 export const Footer = () => {
   return (
     <div className="mb-24">
