@@ -38,15 +38,15 @@
 :root [data-theme="dark"] {
   color-scheme: dark;
   --background-sunk: 240 10% 10%;
-  --background: 240 3.7% 13.9%;
+  --background: 240 3.7% 11.9%;
   --foreground: 0 0% 100%;
-  --card: 240 3.7% 13.9%;
+  --card: 240 3.7% 11.9%;
   --card-foreground: 0 0% 100%;
-  --popover: 240 3.7% 13.9%;
+  --popover: 240 3.7% 11.9%;
   --popover-foreground: 0 0% 100%;
   --primary: 0 0% 100%;
-  --primary-foreground: 240 3.7% 13.9%;
-  --secondary: 240 3.7% 13.9%;
+  --primary-foreground: 240 3.7% 11.9%;
+  --secondary: 240 3.7% 11.9%;
   --secondary-foreground: 0 0% 100%;
   --muted: 240 5.3% 26.1%;
   --muted-foreground: 240 4.9% 83.9%;
