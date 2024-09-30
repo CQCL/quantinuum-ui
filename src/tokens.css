@@ -37,7 +37,7 @@
 
 :root [data-theme="dark"] {
   color-scheme: dark;
-  --background-sunk: 240 10% 3%;
+  --background-sunk: 240 10% 5%;
   --background: 240 3.7% 8%;
   --foreground: 0 0% 100%;
   --card: 240 3.7% 8%;
