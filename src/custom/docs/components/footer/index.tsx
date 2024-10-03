@@ -7,28 +7,28 @@ const footerConfig = {
       name: "Products",
       items: [
         {
-            name: "H-Series",
-            href: "https://docs.quantinuum.com/h-series"
+          name: "H-Series",
+          href: "https://docs.quantinuum.com/h-series"
+      },
+        {
+          name: "Nexus",
+          href: "https://docs.quantinuum.com/nexus"
         },
         {
-            name: "Nexus",
-            href: "https://docs.quantinuum.com/nexus"
-        },
-        {
-            name: "InQuanto",
-            href: "https://docs.quantinuum.com/inquanto"
+          name: "InQuanto",
+          href: "https://docs.quantinuum.com/inquanto"
         }
       ]
     }, {
       name: "Opensource",
       items: [
         {
-            name: "TKET",
-            href: "https://docs.quantinuum.com/tket"
+          name: "TKET",
+          href: "https://docs.quantinuum.com/tket"
         },
         {
-            name: "\u03BBambeq",
-            href: "https://docs.quantinuum.com/lambeq"
+          name: "\u03BBambeq",
+          href: "https://docs.quantinuum.com/lambeq"
         }
       ]
     },{
@@ -67,10 +67,22 @@ export const Footer = () => {
         </div>
         <p className="max-w-[24rem] text-xs leading-5">
           Copyright © {new Date().getFullYear()} Quantinuum Inc. All rights reserved.{' '}
-          <br /> {props.subtitle}
         </p>
         <div className='flex items-center gap-2 mt-2'>
-        <a href="https://www.quantinuum.com/terms-conditions" target="_blank" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>Terms and Conditions</a> <div>/</div>  <a target="_blank" href="https://www.quantinuum.com/privacy-statement" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>Privacy Policy</a><div>/</div>  <a target="_blank" href="https://www.quantinuum.com/cookie-notice" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>Cookie Notice</a>
+          <a href="https://www.quantinuum.com/terms-conditions" target="_blank" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
+            Terms and Conditions
+          </a> <div>/</div>  
+          <a target="_blank" href="https://www.quantinuum.com/privacy-statement" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
+            Privacy Policy
+          </a>
+        </div>
+        <div className='flex items-center gap-2 mt-2'>
+          <a target="_blank" href="https://www.quantinuum.com/cookie-notice" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
+            Cookie Notice
+          </a><div>/</div>
+          <a target="_blank" href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66d87306d9caeeb12196f409_666c39372d2febd0b0bedf71_Quantinuum%20Trademark%20Guidelines%20v1.1%20June%202024.pdf" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
+            Trademark Guidelines
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-24">
