@@ -74,7 +74,7 @@ export const Footer = () => {
           </a> <div>/</div>  
           <a target="_blank" href="https://www.quantinuum.com/privacy-statement" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
             Privacy Policy
-          </a>
+          </a><div>/</div>
         </div>
         <div className='flex items-center gap-2 mt-2'>
           <a target="_blank" href="https://www.quantinuum.com/cookie-notice" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
