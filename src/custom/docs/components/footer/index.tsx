@@ -47,7 +47,6 @@ const footerConfig = {
       ]
     }
   ],
-  subtitle: "",
 }
 
 export const Footer = () => {
