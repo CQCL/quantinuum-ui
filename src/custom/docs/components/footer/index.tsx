@@ -58,7 +58,7 @@ export const Footer = () => {
         <div className="my-12"></div>
 
     <footer className="text-muted-foreground flex w-full flex-col justify-between md:items-start lg:flex-row ">
-      <div className="mb-12 md:mb-0">
+      <div className="mb-12 lg:mb-0">
         <div className="-mt-4">
           <a href="https://www.quantinuum.com/" target='_blank' className='hover:opacity-75 transition'>
           <QuantinuumLogo/>
@@ -91,7 +91,7 @@ export const Footer = () => {
               <span className="text-foreground text-left text-[0.675rem] font-semibold uppercase tracking-wide md:text-right">
                 {col.name}
               </span>
-              <ul className="mt-3 flex flex-col gap-2 md:text-right">
+              <ul className="mt-3 flex flex-col gap-2 lg:text-right">
                 {col.items.map((item) => {
                   return (
                     <li key={item.name}>
