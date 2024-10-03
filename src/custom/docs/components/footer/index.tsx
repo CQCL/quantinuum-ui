@@ -8,15 +8,15 @@ const footerConfig = {
       items: [
         {
           name: "H-Series",
-          href: "https://docs.quantinuum.com/h-series"
+          href: "/h-series"
       },
         {
           name: "Nexus",
-          href: "https://docs.quantinuum.com/nexus"
+          href: "/nexus"
         },
         {
           name: "InQuanto",
-          href: "https://docs.quantinuum.com/inquanto"
+          href: "/inquanto"
         }
       ]
     }, {
@@ -24,11 +24,11 @@ const footerConfig = {
       items: [
         {
           name: "TKET",
-          href: "https://docs.quantinuum.com/tket"
+          href: "/tket"
         },
         {
           name: "\u03BBambeq",
-          href: "https://docs.quantinuum.com/lambeq"
+          href: "/lambeq"
         }
       ]
     },{
