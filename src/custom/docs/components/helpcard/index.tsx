@@ -3,7 +3,7 @@ import { LucideIcon } from "lucide-react"
 import { CardHeader, CardDescription } from "src"
 
 
-export const HelpCards = (props: {
+export const HelpCard = (props: {
     columns: {
       title: string;
       icon_description: string;
