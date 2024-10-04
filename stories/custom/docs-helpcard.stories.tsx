@@ -21,16 +21,16 @@ const helpSectionConfig = {
 };
 
 
-export function DocsHelpCardDemo() {
+function DocsHelpCardDemo() {
     return <DocsHelpCard {...helpSectionConfig} />
 }
 
-const meta: Meta<typeof DocsHelpCard> = {
-    component: DocsHelpCard,
+const meta: Meta<typeof DocsHelpCardDemo> = {
+    component: DocsHelpCardDemo,
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof DocsHelpCard> = {
+export const Default: StoryObj<typeof DocsHelpCardDemo> = {
     args: {},
 };

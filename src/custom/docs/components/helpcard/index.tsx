@@ -1,7 +1,7 @@
-import { Card,  CardTitle  } from '../triplecard/Card'
+import { CardTitle  } from '../triplecard/Card'
 import { LucideIcon } from "lucide-react"
 import { CardHeader, CardDescription } from "src"
-
+import { Card } from 'src'
 
 export const HelpCard = (props: {
     columns: {
@@ -17,11 +17,12 @@ export const HelpCard = (props: {
     return (
         <a href={item.link} key={item.title}>
         <Card className="hover:bg-muted transition">
-        <CardHeader>
-            <item.icon className="w-6 h-6 mb-3 inline" aria-label={item.icon_description}></item.icon>
-            <CardTitle className="text-[1rem] font-semibold inline-block">{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-        </CardHeader>
+          <CardHeader>
+              <item.icon className="w-6 h-6 mb-3 inline" aria-label={item.icon_description}></item.icon>
+              <CardTitle className="text-[1rem] font-semibold inline-block">{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+          </CardHeader>
+        
         </Card>
         </a>
         );
