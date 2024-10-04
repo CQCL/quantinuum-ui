@@ -1,17 +1,17 @@
 import { Meta, StoryObj } from "@storybook/react";
-import {DocsFooter } from "src";
+import { DocsFooter } from "src";
 
 
-export function DocsNavDemo() {
+export function DocsFooterDemo() {
   return <DocsFooter />;
 }
 
-const meta: Meta<typeof DocsNavDemo> = {
-  component: DocsNavDemo,
+const meta: Meta<typeof DocsFooterDemo> = {
+  component: DocsFooterDemo,
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof DocsNavDemo> = {
+export const Default: StoryObj<typeof DocsFooterDemo> = {
   args: {},
 };
