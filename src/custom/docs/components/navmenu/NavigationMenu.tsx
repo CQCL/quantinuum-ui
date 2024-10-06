@@ -37,7 +37,7 @@ export const Navigation = (props: {
                         href={item.href}
                       >
                         {item.logo}
-                        <p className="text-sm leading-tight text-muted-foreground">
+                        <p className="text-sm leading-tight text-muted-foreground py-6">
                           {item.description}
                         </p>
                       </a>
