@@ -97,7 +97,7 @@ const navConfig = {
           href: 'https://docs.quantinuum.com/inquanto/tutorials/examples_overview.html',
         },
         {
-          title: 'API',
+          title: 'API Reference',
           href: 'https://docs.quantinuum.com/inquanto/api/inquanto_api_intro.html',
         },]
     }, {
