@@ -1,5 +1,6 @@
 import { Card,  CardTitle, CardSubtitle  } from './Card'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 import { z } from 'zod'
 import { ComponentProps } from 'react'
 
@@ -22,8 +23,8 @@ const cardSchema = z.array(
 
   const regularLink = (props: ComponentProps<'a'>) => <a {...props}></a>
 
-export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageComponent: typeof NextImage | typeof regularLink  }) => {
-
+export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageComponent: typeof NextImage | typeof regularLink, useNextLink?:  boolean }) => {
+  const LinkComponent = props.useNextLink ? NextLink : (props: ComponentProps<'a'>) => <a {...props}></a>
   return (
     <section className="shadow-lg rounded-xl grid grid-cols-1 items-stretch md:grid-cols-3 ">
       {props.cards.map((item, idx, arr) => {
@@ -65,12 +66,12 @@ export const TripleCard = (props: {cards: z.infer<typeof cardSchema>, imageCompo
                 return (
                   <li key={link.title}>
         
-                    <a
+                    <LinkComponent
                       className="font-semibold tracking-tight text-blue-600 dark:text-blue-300"
                       href={link.link}
                     >
                       {link.title}
-                    </a>
+                    </LinkComponent>
                     <div className="my-2"></div>
                     <div className="text-muted-foreground text-xs leading-4">
                       {link.description}
