@@ -65,7 +65,7 @@ import { DocsTripleCard } from "src";
 
 
 export function DocsTripleCardDemo() {
-  return <DocsTripleCard cards={tripleCardProps} imageComponent={(props: ComponentProps<'a'>) => <a {...props}></a>} />;
+  return <DocsTripleCard cards={tripleCardProps} linkComponent={(props: ComponentProps<'a'>) => <a {...props}></a>}  imageComponent={(props: ComponentProps<'img'>) => <img {...props}></img>} />;
 }
 
 const meta: Meta<typeof DocsTripleCardDemo> = {
