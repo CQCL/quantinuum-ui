@@ -39,7 +39,7 @@ const footerConfig = {
           href: "https://www.quantinuum.com/about",
         }, {
           name: "Careers",
-          href: "https://www.quantinuum.com/publications",
+          href: "https://www.quantinuum.com/careers",
         },{
           name: "Events", 
           href: "https://www.quantinuum.com/events"
