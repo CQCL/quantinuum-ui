@@ -18,6 +18,6 @@ import { navConfigSchema } from '../../components/navmenu/schema';
       navProductName: typeof navProductName !== "undefined" ? navProductName : null
   })
     root.render(
-      <div className="use-tailwind">  <div className="antialiased" style={{fontFamily: `Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`}}><NavBar activePath="/" linkComponent={(props: ComponentProps<'a'>) => <a {...props}></a>}></NavBar> </div></div>
+      <div className="use-tailwind">  <div className="antialiased" style={{fontFamily: `Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`}}><NavBar activePath="/" ></NavBar> </div></div>
     )
   })()

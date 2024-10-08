@@ -3,7 +3,7 @@ import { ComponentProps } from "react";
 import {DocsNavBar } from "src";
 
 export function DocsNavDemo() {
-  return <DocsNavBar activePath="/" linkComponent={(props: ComponentProps<'a'>) => <a {...props}></a>} />;
+  return <DocsNavBar activePath="/" />;
 }
 
 const meta: Meta<typeof DocsNavDemo> = {

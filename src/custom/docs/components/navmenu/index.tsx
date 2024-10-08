@@ -1,6 +1,5 @@
 'use client'
 import { Navigation } from './NavigationMenu'
-import NextLink from 'next/link'
 import { QuantinuumLogo } from './QuantinuumLogo'
 import { MobileMenu } from './MobileMenu'
 import { QuantinuumIdent } from './QuantinuumIdent'
@@ -130,7 +129,6 @@ const navConfig = {
 
 
 export const NavBar = (props: {
-  linkComponent: typeof NextLink  | typeof RegularLink
   activePath: string
   enableModeSelector?: boolean
 }) => {
@@ -153,13 +151,13 @@ export const NavBar = (props: {
               <div className='mx-0.5 text-muted-foreground/50'>|</div><div>Documentation</div>
             </div>
           </div>
-          <props.linkComponent href="/" className="ml-4 mr-4 flex items-center space-x-2">
+          <RegularLink href="/" className="ml-4 mr-4 flex items-center space-x-2">
             <span className="hidden font-bold">Quantinuum</span>
-          </props.linkComponent>
+          </RegularLink>
        
         </div>
         <div className="flex items-center gap-5">
-          <Navigation activePath={props.activePath} linkComponent={props.linkComponent} navTextLinks={navConfig.navTextLinks} />
+          <Navigation activePath={props.activePath} navTextLinks={navConfig.navTextLinks} />
           {props.enableModeSelector ? <> <div className='w-px h-6 bg-muted-foreground/50'></div><ModeSelector /> </>: null}
         </div>
       </div>
