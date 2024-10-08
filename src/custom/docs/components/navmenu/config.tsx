@@ -16,5 +16,4 @@ export const navConfigSchema = z.object({
 
 
 export type ActivePaths = (z.infer<typeof navConfigSchema>['navTextLinks'])[number]['href']
-const defaultLink = (props: ComponentProps<'a'>) => <a {...props}></a>
-export type Link = typeof defaultLink
+export const RegularLink = (props: ComponentProps<'a'>) => <a {...props}></a>
