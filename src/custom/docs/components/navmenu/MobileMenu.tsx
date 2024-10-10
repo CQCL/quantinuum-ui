@@ -8,9 +8,19 @@ import {
     DropdownMenuTrigger,
   } from "src"
 import { MenuIcon } from "lucide-react"
-import { NavConfig  } from "./schema"
 
-  export const MobileMenu = (props: Pick<NavConfig, 'navTextLinks'>) => {
+  export const MobileMenu = (props: {
+    navTextLinks: {
+      href: string,
+      title: string,
+      logo: JSX.Element,
+      description: string,
+      dropDown: {
+        href: string,
+        title: string, 
+      }[],
+    }[];
+  }) => {
     return <DropdownMenu>
     <DropdownMenuTrigger asChild><Button variant='outline' className="w-8 p-0 h-8"> <MenuIcon/></Button></DropdownMenuTrigger>
     <DropdownMenuContent>
