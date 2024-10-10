@@ -4,7 +4,6 @@ import { QuantinuumLogo } from './QuantinuumLogo'
 import { MobileMenu } from './MobileMenu'
 import { QuantinuumIdent } from './QuantinuumIdent'
 import { ModeSelector } from './ModeSelector'
-import { RegularLink } from './config'
 import React from 'react'
 import { HSeriesLogo } from '../logos/HSeriesLogo'
 import { NexusLogo } from '../logos/NexusLogo'
@@ -151,9 +150,9 @@ export const NavBar = (props: {
               <div className='mx-0.5 text-muted-foreground/50'>|</div><div>Documentation</div>
             </div>
           </div>
-          <RegularLink href="/" className="ml-4 mr-4 flex items-center space-x-2">
+          <a href="/" className="ml-4 mr-4 flex items-center space-x-2">
             <span className="hidden font-bold">Quantinuum</span>
-          </RegularLink>
+          </a>
        
         </div>
         <div className="flex items-center gap-5">
