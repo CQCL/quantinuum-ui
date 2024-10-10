@@ -20,6 +20,10 @@
       {
         "name": "alpha",
         "prerelease": true
+      },
+      {
+        "name": "navbar",
+        "prerelease": true
       }
     ]
   },
