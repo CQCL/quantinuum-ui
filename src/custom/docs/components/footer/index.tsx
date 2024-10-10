@@ -74,14 +74,9 @@ export const Footer = () => {
           <a target="_blank" href="https://www.quantinuum.com/privacy-statement" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
             Privacy Policy
           </a><div>/</div>
-        </div>
-        <div className='flex items-center gap-2 mt-2'>
           <a target="_blank" href="https://www.quantinuum.com/cookie-notice" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
             Cookie Notice
           </a><div>/</div>
-          <a target="_blank" href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66d87306d9caeeb12196f409_666c39372d2febd0b0bedf71_Quantinuum%20Trademark%20Guidelines%20v1.1%20June%202024.pdf" className='font-medium text-xs tracking-tight text-blue-600 dark:text-blue-300'>
-            Trademark Guidelines
-          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-24">
