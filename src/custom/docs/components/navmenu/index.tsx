@@ -76,7 +76,7 @@ const navConfig = {
       href: "/inquanto/index.html",
       pathMatch: "",
       logo: <InquantoLogo className="h-8 w-56"></InquantoLogo>,
-      description: "Toolkit for complex molecular and materials simulations",
+      description: "Platform for complex molecular and materials simulations",
       dropDown: [{
           title: 'Introduction',
           href: '/inquanto/introduction/overview.html',
