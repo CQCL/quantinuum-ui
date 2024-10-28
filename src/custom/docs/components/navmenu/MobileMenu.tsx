@@ -23,7 +23,7 @@ import { MenuIcon } from "lucide-react"
   }) => {
     return <DropdownMenu >
     <DropdownMenuTrigger asChild><Button variant='outline' className="w-8 p-0 h-8"> <MenuIcon/></Button></DropdownMenuTrigger>
-    <DropdownMenuContent className="max-h-50vh overflow-y-auto" >
+    <DropdownMenuContent className="max-h-[80vh] overflow-y-auto ml-2" >
         {props.navTextLinks.map(link => {
             return   <><DropdownMenuItem asChild key={link.title}><a href={link.href}>{link.title}</a>
             </DropdownMenuItem>
