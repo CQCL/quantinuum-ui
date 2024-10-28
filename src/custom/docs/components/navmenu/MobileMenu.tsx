@@ -21,12 +21,18 @@ import { MenuIcon } from "lucide-react"
       }[],
     }[];
   }) => {
-    return <DropdownMenu>
+    return <DropdownMenu >
     <DropdownMenuTrigger asChild><Button variant='outline' className="w-8 p-0 h-8"> <MenuIcon/></Button></DropdownMenuTrigger>
-    <DropdownMenuContent>
+    <DropdownMenuContent className="max-h-50vh overflow-y-auto" >
         {props.navTextLinks.map(link => {
-            return   <DropdownMenuItem asChild key={link.title}><a href={link.href}>{link.title}</a></DropdownMenuItem>
+            return   <><DropdownMenuItem asChild key={link.title}><a href={link.href}>{link.title}</a>
+            </DropdownMenuItem>
+            {link.dropDown.map(subitem => {
+              return <DropdownMenuItem className="text-xs ml-2 text-muted-foreground last:mb-4" key={subitem.title} asChild ><a  href={subitem.href}>{subitem.title}</a></DropdownMenuItem>
+            })}
+            </>
         })}
+        {}
     </DropdownMenuContent>
   </DropdownMenu>
   }
