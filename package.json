@@ -24,6 +24,10 @@
       {
         "name": "navbar",
         "prerelease": true
+      },
+      {
+        "name": "layers",
+        "prerelease": true
       }
     ]
   },

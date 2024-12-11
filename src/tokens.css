@@ -1,7 +1,8 @@
 :root {
   color-scheme: light;
-  --background: 0 0% 100%;
-  --foreground: 240 10% 3.9%;
+  --background: 0 0% 97.9%;
+  --foreground: 240 10% 0%;
+  --paper: 240 4.8% 100%;
 
   --card: 0 0% 100%;
   --card-foreground: 240 10% 3.9%;
@@ -44,6 +45,7 @@
   color-scheme: dark;
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;
+  --paper: 240 3.7% 7.9%;
 
   --card: 240 10% 3.9%;
   --card-foreground: 0 0% 98%;
