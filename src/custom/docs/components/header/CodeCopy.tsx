@@ -13,7 +13,7 @@ export const CodeCopy = (props: {textToCopy: string, className?: string}) => {
         <Button
         variant="ghost"
         size="icon"
-        className={cn(`${copied ? ' hover:bg-paper' : 'hover:bg-background/50 hover:text-foreground/75'} ml-1`, props.className)}
+        className={cn(`${copied ? ' hover:bg-paper' : 'hover:bg-paper/50 hover:text-foreground/75'} ml-1`, props.className)}
         onClick={() => {
           window.navigator.clipboard.writeText(props.textToCopy)
           setHasCopied(true)
