@@ -33,6 +33,7 @@ export * from "./shadcn/ui/scroll-area";
 export * from "./shadcn/ui/select";
 export * from "./shadcn/ui/separator";
 export * from "./shadcn/ui/sheet";
+export * from './shadcn/ui/sidebar';
 export * from "./shadcn/ui/skeleton";
 export * from "./shadcn/ui/slider";
 export * from "./shadcn/ui/switch";
