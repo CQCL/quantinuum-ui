@@ -4,3 +4,4 @@ dist
 storybook.log
 storybook-static
 .mypy_cache
+.vscode
