@@ -9,6 +9,7 @@ export * from "./shadcn/ui/badge";
 export * from "./shadcn/ui/button";
 export * from "./shadcn/ui/calendar";
 export * from "./shadcn/ui/card";
+export * from "./shadcn/ui/chart";
 export * from "./shadcn/ui/checkbox";
 export * from "./shadcn/ui/collapsible";
 export * from "./shadcn/ui/command";
