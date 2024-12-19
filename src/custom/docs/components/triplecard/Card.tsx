@@ -42,7 +42,7 @@ const Card = React.forwardRef<
   return (
     <div
       className={cn(
-        ' border-border flex w-full flex-col justify-between rounded-xl overflow-hidden border p-7 pb-9 dark:bg-muted/25 bg-background',
+        ' border-border flex w-full flex-col justify-between rounded-xl overflow-hidden border p-7 pb-9 dark:bg-muted/25 bg-paper',
         className
       )}
       ref={ref}
