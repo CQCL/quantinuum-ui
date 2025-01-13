@@ -1,5 +1,5 @@
 {
-  "name": "@quantinuum/quantinuum-ui",
+  "name": "@quantinuum/ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
   "private": false,
