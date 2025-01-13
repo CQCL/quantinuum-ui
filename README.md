@@ -1,7 +1,7 @@
-# quantinuum-ui
+# @quantinuum/quantinuum-ui
 Quantinuum design tokens and React components.
 
-Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and radix-ui component generator. Shadcn components have been generated into this repo using the `components.json` definition and re-exported as a new library. 
+Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and radix-ui component generator. Shadcn components have been generated into this repo using the `components.json` definition and re-exported as a new library.
 
 ### Development
 
