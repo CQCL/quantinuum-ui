@@ -24,10 +24,6 @@
       {
         "name": "navbar",
         "prerelease": true
-      },
-      {
-        "name": "dest2",
-        "prerelease": true
       }
     ]
   },
