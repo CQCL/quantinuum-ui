@@ -1,7 +1,7 @@
 {
   "name": "@quantinuum/quantinuum-ui",
   "version": "1.0.0",
-  "description": "Quantinuum design system.",
+  "description": "Quantinuum design tokens and React components.",
   "private": false,
   "author": {
     "name": "Aidan Keay",
