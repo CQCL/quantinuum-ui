@@ -1,5 +1,5 @@
 {
-  "name": "@cqcl/quantinuum-ui",
+  "name": "@quantinuum/quantinuum-ui",
   "version": "1.0.0",
   "description": "Quantinuum design system.",
   "private": false,
@@ -23,6 +23,10 @@
       },
       {
         "name": "navbar",
+        "prerelease": true
+      },
+      {
+        "name": "dest",
         "prerelease": true
       }
     ]
