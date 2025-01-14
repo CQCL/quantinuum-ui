@@ -28,6 +28,10 @@
       {
         "name": "layers",
         "prerelease": true
+      },
+      {
+        "name": "layers2",
+        "prerelease": true
       }
     ]
   },
