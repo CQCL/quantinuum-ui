@@ -16,24 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4 
-      - uses: actions/configure-pages@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
             node-version: 20
             cache: 'npm'
       - run: npm ci
       - run: npm run lint
-      - run: npm run build && npm run build-storybook
-
-      - name: Upload artifact.
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./storybook-static/
-
-      - name: Publish storybook build to github pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - run: npm run build
 
       - run: npx semantic-release
         env:
