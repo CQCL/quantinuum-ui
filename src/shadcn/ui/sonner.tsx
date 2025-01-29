@@ -14,7 +14,7 @@ export const SonnerToast = ({ theme, className, toastOptions, ...props }: Toaste
         ...toastOptions,
         classNames: {
           toast: cn(
-              "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
+              "group toast group-[.toaster]:bg-paper group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
               toastOptions?.classNames?.toast
           ),
           description: cn("group-[.toast]:text-muted-foreground", toastOptions?.classNames?.description),
