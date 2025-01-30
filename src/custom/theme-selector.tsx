@@ -13,7 +13,7 @@ export const useTheme = () => {
   return { theme, setMode: (_mode: typeof theme['mode']) => setTheme(_mode) }
 }
 
-export const ThemeSelector = ({theme, setMode}: ReturnType<typeof useTheme>) => {
+export const ThemeSelector = React.forwardRef<HTMLButtonElement, ReturnType<typeof useTheme>>(({theme, setMode}, ref) => {
 
   const stateMap = {
     "light": {
@@ -31,9 +31,9 @@ export const ThemeSelector = ({theme, setMode}: ReturnType<typeof useTheme>) => 
       if (theme.mode === "dark") setMode('light')
       if (theme.mode === "light") setMode("system")
       if (theme.mode === "system") setMode("dark")
-    }}>
+    }} ref={ref}>
       {stateMap[theme.mode].icon}
     </Button>
   )
- 
-};
+
+})

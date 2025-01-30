@@ -1,11 +1,8 @@
+import React from "react"
 import { cn } from "src/utils"
 
-function Skeleton({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
+const Skeleton = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(({className, ...props}, ref) => {
+  return <div
       className={cn("animate-pulse rounded-md bg-primary/10", className)}
       aria-busy="true"
       role="progressbar"
@@ -13,8 +10,7 @@ function Skeleton({
       aria-valuemax={100}
       aria-valuetext="Please wait..."
       {...props}
+      ref={ref}
     />
-  )
-}
-
+})
 export { Skeleton }
