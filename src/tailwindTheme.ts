@@ -18,6 +18,9 @@ export const tailwindTheme = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        link: {
+          DEFAULT: 'hsl(var(--link))',
+        },
         paper: {
           DEFAULT: "hsl(var(--paper))"
         },
