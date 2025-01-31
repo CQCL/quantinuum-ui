@@ -3,6 +3,7 @@
   --background: 0 0% 97.9%;
   --foreground: 240 10% 0%;
   --paper: 240 4.8% 100%;
+  --paper2: var(--paper);
 
   --card: 0 0% 100%;
   --card-foreground: 240 10% 5.9%;
