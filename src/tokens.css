@@ -52,11 +52,17 @@
 
 :root [data-theme="dark"] {
   color-scheme: dark;
-  --background: 240 10% 0%;
+  --background: 240 3.7% 6%;
   --foreground: 0 0% 98%;
-  --paper: 240 3.7% 9.9%;
+  --paper: 240 3.7% 7.9%;
   /* --paper2: 240 3.7% 13.9%; */
 
+
+  /* --background: 240 10% 0%;
+  --foreground: 0 0% 98%;
+  --paper: 240 3.7% 7.9%;
+  --paper2: 240 3.7% 13.9%;
+  --card: 240 10% 5.9%; */
 
   --card: var(--paper);
   --card-foreground: 0 0% 98%;
@@ -80,7 +86,7 @@
   --destructive-foreground: 240 10% 5.9%;
 
   --border: 240 3.7% 16.9%;
-  --input: 240 3.7% 26.9%;
+  --input: 240 3.7% 16.9%;
   --ring: 240 4.9% 83.9%;
 
   --sidebar-background: var(--paper);
