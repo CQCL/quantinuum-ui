@@ -5,10 +5,10 @@
   --paper: 240 4.8% 100%;
   /* --paper2: var(--paper); */
 
-  --card: 0 0% 100%;
+  --card: var(--paper);
   --card-foreground: 240 10% 5.9%;
 
-  --popover: 0 0% 100%;
+  --popover: var(--paper);
   --popover-foreground: 240 10% 5.9%;
 
   --primary: 240 5.9% 10%;
@@ -57,10 +57,11 @@
   --paper: 240 3.7% 9.9%;
   /* --paper2: 240 3.7% 13.9%; */
 
-  --card: 240 10% 5.9%;
+
+  --card: var(--paper);
   --card-foreground: 0 0% 98%;
 
-  --popover: 240 10% 5.9%;
+  --popover: var(--paper);
   --popover-foreground: 0 0% 98%;
 
   --primary: 0 0% 98%;
