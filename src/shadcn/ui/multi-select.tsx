@@ -5,7 +5,7 @@ import { CaretSortIcon, CheckIcon, Cross2Icon } from "@radix-ui/react-icons"
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 import {
   Primitive,
-  type ComponentPropsWithoutRef,
+  type PrimitivePropsWithRef,
 } from "@radix-ui/react-primitive"
 import { useControllableState } from "@radix-ui/react-use-controllable-state"
 import { createPortal } from "react-dom"
@@ -67,7 +67,7 @@ const useMultiSelect = () => {
   return context
 }
 
-type MultiSelectProps = React.ComponentPropsWithoutRef<
+type MultiSelectProps = PrimitivePropsWithRef<
   typeof PopoverPrimitive.Root
 > & {
   value?: string[]
@@ -192,7 +192,7 @@ MultiSelect.displayName = "MultiSelect"
 type MultiSelectTriggerElement = React.ElementRef<typeof Primitive.div>
 
 interface MultiSelectTriggerProps
-  extends ComponentPropsWithoutRef<typeof Primitive.div> {}
+  extends PrimitivePropsWithRef<typeof Primitive.div> {}
 
 const PreventClick = (e: React.MouseEvent | React.TouchEvent) => {
   e.preventDefault()
@@ -229,7 +229,7 @@ const MultiSelectTrigger = React.forwardRef<
 MultiSelectTrigger.displayName = "MultiSelectTrigger"
 
 interface MultiSelectValueProps
-  extends ComponentPropsWithoutRef<typeof Primitive.div> {
+  extends PrimitivePropsWithRef<typeof Primitive.div> {
   placeholder?: string
   maxDisplay?: number
   maxItemLength?: number
@@ -330,7 +330,7 @@ const MultiSelectValue = React.forwardRef<
 
 const MultiSelectSearch = React.forwardRef<
   React.ElementRef<typeof CommandInput>,
-  ComponentPropsWithoutRef<typeof CommandInput>
+  PrimitivePropsWithRef<typeof CommandInput>
 >((props, ref) => {
   const { onSearch } = useMultiSelect()
 
@@ -341,7 +341,7 @@ MultiSelectSearch.displayName = "MultiSelectSearch"
 
 const MultiSelectList = React.forwardRef<
   React.ElementRef<typeof CommandList>,
-  ComponentPropsWithoutRef<typeof CommandList>
+  PrimitivePropsWithRef<typeof CommandList>
 >(({ className, ...props }, ref) => {
   return (
     <CommandList
@@ -355,7 +355,7 @@ const MultiSelectList = React.forwardRef<
 MultiSelectList.displayName = "MultiSelectList"
 
 interface MultiSelectContentProps
-  extends ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> {}
+  extends PrimitivePropsWithRef<typeof PopoverPrimitive.Content> {}
 
 const MultiSelectContent = React.forwardRef<
   React.ElementRef<typeof PopoverPrimitive.Content>,
@@ -414,7 +414,7 @@ const MultiSelectContent = React.forwardRef<
   )
 })
 
-type MultiSelectItemProps = ComponentPropsWithoutRef<typeof CommandItem> &
+type MultiSelectItemProps = PrimitivePropsWithRef<typeof CommandItem> &
   Partial<MultiSelectOptionItem> & {
     onSelect?: (value: string, item: MultiSelectOptionItem) => void
     onDeselect?: (value: string, item: MultiSelectOptionItem) => void
@@ -501,7 +501,7 @@ const MultiSelectItem = React.forwardRef<
 
 const MultiSelectGroup = React.forwardRef<
   React.ElementRef<typeof CommandGroup>,
-  ComponentPropsWithoutRef<typeof CommandGroup>
+  PrimitivePropsWithRef<typeof CommandGroup>
 >((props, forwardRef) => {
   return <CommandGroup {...props} ref={forwardRef} />
 })
@@ -510,7 +510,7 @@ MultiSelectGroup.displayName = "MultiSelectGroup"
 
 const MultiSelectSeparator = React.forwardRef<
   React.ElementRef<typeof CommandSeparator>,
-  ComponentPropsWithoutRef<typeof CommandSeparator>
+  PrimitivePropsWithRef<typeof CommandSeparator>
 >((props, forwardRef) => {
   return <CommandSeparator {...props} ref={forwardRef} />
 })
@@ -519,7 +519,7 @@ MultiSelectSeparator.displayName = "MultiSelectSeparator"
 
 const MultiSelectEmpty = React.forwardRef<
   React.ElementRef<typeof CommandEmpty>,
-  ComponentPropsWithoutRef<typeof CommandEmpty>
+  PrimitivePropsWithRef<typeof CommandEmpty>
 >(({ children = "No Content", ...props }, forwardRef) => {
   return (
     <CommandEmpty {...props} ref={forwardRef}>
