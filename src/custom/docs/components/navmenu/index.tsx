@@ -5,7 +5,7 @@ import { MobileMenu } from './MobileMenu'
 import { QuantinuumIdent } from './QuantinuumIdent'
 import { ModeSelector } from './ModeSelector'
 import React from 'react'
-import { HSeriesLogo } from '../logos/HSeriesLogo'
+import { SystemsLogo } from '../logos/SystemsLogo'
 import { NexusLogo } from '../logos/NexusLogo'
 import { TKETLogo } from '../logos/TKETLogo'
 import { InquantoLogo } from '../logos/InQuantoLogo'
@@ -18,7 +18,7 @@ const navConfig = {
       title: 'Systems',
       href: '/systems/index.html',
       pathMatch: 'somewhere',
-      logo: <HSeriesLogo width={150 * 1.5} height={16 * 1.5}></HSeriesLogo>,
+      logo: <SystemsLogo width={150 * 1.5} height={16 * 1.5}></SystemsLogo>,
       description: "Quantinuum's QCCD ion-trap hardware, the world's highest peforming quantum computer.",
       dropDown: [{
         title: "Guides",
