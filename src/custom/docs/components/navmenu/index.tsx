@@ -15,23 +15,23 @@ import { LambeqLogo } from '../logos/LambeqLogo'
 const navConfig = {
   navTextLinks: [
     {
-      title: 'H-Series',
-      href: '/h-series/index.html',
+      title: 'Systems',
+      href: '/systems/index.html',
       pathMatch: 'somewhere',
       logo: <HSeriesLogo width={150 * 1.5} height={16 * 1.5}></HSeriesLogo>,
       description: "Quantinuum's QCCD ion-trap hardware, the world's highest peforming quantum computer.",
       dropDown: [{
         title: "Guides",
-        href: "/h-series/guides.html",
+        href: "/systems/guides.html",
       },{
         title: "Getting Started",
-        href: "/h-series/trainings/getting_started/getting_started_index.html",
+        href: "/systems/trainings/getting_started/getting_started_index.html",
       },{
         title: "Knowledge Articles",
-        href: "/h-series/trainings/knowledge_articles/ka_index.html",
+        href: "/systems/trainings/knowledge_articles/ka_index.html",
       },{
         title: "Support",
-        href: "/h-series/support.html",
+        href: "/systems/support.html",
       }]
     }, {
       title: 'Nexus',
@@ -76,26 +76,22 @@ const navConfig = {
       href: "/inquanto/index.html",
       pathMatch: "",
       logo: <InquantoLogo className="h-8 w-56"></InquantoLogo>,
-      description: "Platform for complex molecular and materials simulations",
+      description: "Enabling complex molecular and materials simulations",
       dropDown: [{
-          title: 'Introduction',
-          href: '/inquanto/introduction/overview.html',
-        },
-        {
-          title: 'User Guide',
+          title: 'Guides',
           href: '/inquanto/manual/howto.html',
         },
         {
-          title: 'Tutorials',
+          title: 'Trainings',
           href: '/inquanto/tutorials/tutorial_overview.html',
-        },
-        {
-          title: 'Examples',
-          href: '/inquanto/tutorials/examples_overview.html',
         },
         {
           title: 'API Reference',
           href: '/inquanto/api/inquanto_api_intro.html',
+        },
+        {
+          title: 'Extensions',
+          href: '/inquanto/tutorials/examples_overview.html',
         },]
     }, {
       title: "\u03BBambeq",
