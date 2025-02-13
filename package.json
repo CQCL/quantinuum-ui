@@ -24,6 +24,10 @@
       {
         "name": "navbar",
         "prerelease": true
+      },
+      {
+        "name": "navbar2",
+        "prerelease": true
       }
     ]
   },
