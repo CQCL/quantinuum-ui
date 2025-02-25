@@ -9,6 +9,7 @@ import {
 } from "src";
 
 import type { Meta, StoryObj } from "@storybook/react";
+import { Folder } from "lucide-react";
 
 const DropdownDemo = () => {
   return (
@@ -17,7 +18,10 @@ const DropdownDemo = () => {
       <DropdownMenuContent>
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Profile</DropdownMenuItem>
+        <DropdownMenuItem>
+          <Folder className="text-muted-foreground" />
+          <span>With Icon</span>
+        </DropdownMenuItem>
         <DropdownMenuItem>Billing</DropdownMenuItem>
         <DropdownMenuItem>Team</DropdownMenuItem>
         <DropdownMenuItem>Subscription</DropdownMenuItem>
