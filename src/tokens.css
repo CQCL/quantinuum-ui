@@ -3,10 +3,10 @@
   --background: 0 0% 100%;
   --foreground: 240 10% 3.9%;
 
-  --card: var(--background)
+  --card: var(--background);
   --card-foreground: 240 10% 3.9%;
 
-  --popover: var(--background)
+  --popover: var(--background);
   --popover-foreground: 240 10% 3.9%;
 
   --primary: 240 5.9% 10%;
