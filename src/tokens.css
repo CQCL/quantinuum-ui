@@ -1,13 +1,13 @@
 :root {
   color-scheme: light;
   --background: 0 0% 100%;
-  --foreground: var(--background);
+  --foreground: 240 10% 3.9%;
 
-  --card: var(--background);
-  --card-foreground: var(--background);
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
 
-  --popover: var(--background);
-  --popover-foreground: var(--background);
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
 
   --primary: 240 5.9% 10%;
   --primary-foreground: 0 0% 98%;
@@ -26,7 +26,7 @@
 
   --border: 240 5.9% 88%;
   --input: 240 5.9% 88%;
-  --ring: var(--background);
+  --ring: 240 10% 3.9%;
 
   --radius: 0.5rem;
 
@@ -45,10 +45,10 @@
   --background: 240 10% 7.9%;
   --foreground: 0 0% 98%;
 
-  --card: var(--background);
+  --card: 240 10% 3.9%;
   --card-foreground: 0 0% 98%;
 
-  --popover: var(--background);
+  --popover: 240 10% 3.9%;
   --popover-foreground: 0 0% 98%;
 
   --primary: 0 0% 98%;
@@ -64,7 +64,7 @@
   --accent-foreground: 0 0% 98%;
 
   --destructive: 0 84% 60%;
-  --destructive-foreground: var(--background);
+  --destructive-foreground: 240 10% 3.9%;
 
   --border: 240 3.7% 16.9%;
   --input: 240 3.7% 26.9%;
