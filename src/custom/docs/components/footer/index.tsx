@@ -7,8 +7,8 @@ const footerConfig = {
       name: "Products",
       items: [
         {
-          name: "H-Series",
-          href: "/h-series"
+          name: "Systems",
+          href: "/systems"
       },
         {
           name: "Nexus",
