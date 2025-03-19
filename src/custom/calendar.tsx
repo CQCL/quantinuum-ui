@@ -3,6 +3,12 @@ import React, { Component } from 'react';
 import {DateTime, Duration, Interval} from 'luxon'
 import { cn } from 'src/utils';
 import { Button } from 'src/shadcn/ui/button';
+
+const events = [
+    {start: DateTime.fromObject({month: 3, day: 7, year: 2025}), end: DateTime.fromObject({month: 3, day: 12, year: 2025,}),  eventInfo: {name: 'big thing!'}}
+]
+
+
 export const Calendar = () => {
     const [view, setView] = React.useState(DateTime.now())
 
@@ -26,15 +32,20 @@ export const Calendar = () => {
 
         const days = [...Array(42).fill(undefined)].map((_, idx) => {
             const day =  startOfCalendar.plus({days: idx});
+            const eventsForDay = events.filter(event => {
+                const eventInterval = Interval.fromDateTimes(event.start, event.end)
+                return eventInterval.contains(day);
+            })
             return {
                 day: day.day,
-                isInCurrentMonth: day.month === view.month
+                isInCurrentMonth: day.month === view.month,
+                eventsForDay
             }
         })
 
     return (
-      <div className="calendar">
-        <div className="calendar-header">
+      <div>
+        <div>
           <h2>{months[view.month - 1]} {view.year}</h2>
           <Button variant='outline' onClick={goToPreviousMonth}>Previous</Button>
           <Button variant='outline' onClick={goToCurrentMonth}>Current</Button>
@@ -50,7 +61,7 @@ export const Calendar = () => {
           </>
 
           {days.map((day) => {
-                return <div className={cn(day.isInCurrentMonth ? '' : 'text-muted-foreground/50', 'hover:bg-muted transition p-2')}><p>{day.day}</p></div>
+                return <div className={cn(day.isInCurrentMonth ? '' : 'text-muted-foreground/50', 'hover:bg-muted transition p-2')}><p>{day.day}{day.eventsForDay.map(e => <div key={e.eventInfo.name} className="bg-red-600 p-3">{e.eventInfo.name}</div>)}</p></div>
               })}</div>
       </div>
     )
