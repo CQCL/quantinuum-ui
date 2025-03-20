@@ -16,7 +16,7 @@ export default [{
     }
     warn(warning);
   },
-  input: "src/index.ts",
+  input: "index.ts",
   output: [
     {
       dir: "dist/",
@@ -34,17 +34,17 @@ export default [{
       declarationDir: "./dist/types",
     }),
     copy({
-      targets: [{ src: "./src/tokens.css", dest: "./dist" }],
+      targets: [{ src: "./tokens.css", dest: "./dist" }],
     }),
     terser({ compress: { directives: false } }),
     preserveDirectives(),
   ],
 
 }, {
-  input: "src/utils/syncTheme.ts",
+  input: "lib/syncTheme.ts",
   output: [
     {
-      dir: "dist/src/utils/",
+      dir: "dist/utils/",
       format: "iife",
       name: "syncTheme",
     },
@@ -54,7 +54,7 @@ export default [{
     commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
-      outDir: "dist/src/utils/",
+      outDir: "dist/utils/",
       declaration: false,
     }),
     terser(),
