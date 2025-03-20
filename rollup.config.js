@@ -6,7 +6,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
 
-export default [{
+const config = [{
   onwarn(warning, warn) {
     if (
       warning.code === "MODULE_LEVEL_DIRECTIVE" &&
@@ -16,7 +16,7 @@ export default [{
     }
     warn(warning);
   },
-  input: "src/index.ts",
+  input: "index.ts",
   output: [
     {
       dir: "dist/",
@@ -60,3 +60,5 @@ export default [{
     terser(),
   ],
 }];
+
+export default config;
