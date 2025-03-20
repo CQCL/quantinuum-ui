@@ -1,9 +1,8 @@
-import { Config } from "tailwindcss";
-import { tailwindTheme } from ".";
+
+
 export default {
     darkMode: ["class"],
     content: ["./src/**/*.{ts,tsx}", "./stories/**/*.{ts,tsx}"],
-  presets: [tailwindTheme],
     theme: {
     	extend: {
     		colors: {
@@ -20,4 +19,4 @@ export default {
     		}
     	}
     }
-} satisfies Config;
+}
