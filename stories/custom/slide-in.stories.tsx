@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SlideIn } from "src/custom/slide-in";
+import { SlideIn } from "components/custom/slide-in";
 
 const meta: Meta<typeof SlideIn> = {
   component: () => {

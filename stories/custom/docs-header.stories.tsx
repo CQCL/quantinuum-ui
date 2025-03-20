@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "src/custom/docs";
+import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "components/custom/docs";
 import { NexusLogo } from "./NexusLogo";
 import { Button } from "index";
 import { RocketIcon } from "lucide-react";
