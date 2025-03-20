@@ -6,8 +6,8 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "src/shadcn/ui/pagination";
-  
+} from "components/ui/pagination";
+
   export function PaginationDemo() {
     return (
       <Pagination>
@@ -51,4 +51,3 @@ export const Default: StoryObj<typeof PaginationDemo> = {
   args: {},
 };
 
-  

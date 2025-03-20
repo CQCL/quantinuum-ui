@@ -4,8 +4,8 @@ import {
     ResizableHandle,
     ResizablePanel,
     ResizablePanelGroup,
-} from "src";
-  
+} from "index";
+
 function ResizeableDemo() {
     return (
       <ResizablePanelGroup
@@ -36,7 +36,7 @@ function ResizeableDemo() {
       </ResizablePanelGroup>
     )
   }
-  
+
 
 const meta: Meta<typeof ResizeableDemo> = {
   component: ResizeableDemo,

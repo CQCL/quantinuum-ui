@@ -11,7 +11,7 @@ import {
   FormLabel,
   FormMessage,
   Input,
-} from "src";
+} from "index";
 import { z } from "zod";
 
 import type { Meta, StoryObj } from "@storybook/react";

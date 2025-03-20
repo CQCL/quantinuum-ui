@@ -3,11 +3,11 @@ import {
     InputOTPGroup,
     InputOTPSeparator,
     InputOTPSlot,
-  } from "src"
-  
+  } from "index"
+
   import type { Meta, StoryObj } from "@storybook/react";
 
-  
+
 
 const InputOTPDemo = () => {
   return (
@@ -24,12 +24,12 @@ const InputOTPDemo = () => {
       <InputOTPSlot index={5} />
     </InputOTPGroup>
   </InputOTP>
-  
+
   );
 };
 const meta: Meta<typeof InputOTPDemo> = {
   component: InputOTPDemo,
- 
+
 };
 
 export default meta;

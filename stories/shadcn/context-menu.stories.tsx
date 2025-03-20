@@ -13,7 +13,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "src";
+} from "index";
 
 const ContextMenuDemo = () => {
   return (

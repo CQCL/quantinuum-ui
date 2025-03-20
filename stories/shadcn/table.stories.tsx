@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "src";
+} from "index";
 
 const invoices = [
   {

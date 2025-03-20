@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { Checkbox } from "src";
+import { Checkbox } from "index";
 
 const CheckboxDemo = () => {
   return (

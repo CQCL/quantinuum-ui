@@ -12,7 +12,7 @@ import {
   MultiSelectSearch,
   MultiSelectTrigger,
   MultiSelectValue,
-} from "src"
+} from "index"
 
 
 

@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react";
-import { Textarea } from "src";
+import { Textarea } from "index";
 
 const meta: Meta<typeof Textarea> = {
   component: Textarea,

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-import { Calendar } from "src";
+import { Calendar } from "index";
 
 export function CalendarDemo() {
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
@@ -14,7 +14,7 @@ export function CalendarDemo() {
       mode="range"
       selected={dateRange}
       onSelect={setDateRange}
-      className="rounded-md border shadow"
+      className="rounded-md border shadow-sm"
     />
   );
 }

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { DocsFooter } from "src";
+import { DocsFooter } from "index";
 
 
 export function DocsFooterDemo() {

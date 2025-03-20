@@ -4,7 +4,7 @@ import {  Breadcrumb,
     BreadcrumbLink,
     BreadcrumbList,
     BreadcrumbPage,
-    BreadcrumbSeparator, } from "src";
+    BreadcrumbSeparator, } from "index";
 
 export function BadgeDemo() {
   return (

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ComponentProps } from "react";
-import {DocsNavBar } from "src";
+import {DocsNavBar } from "index";
 
 export function DocsNavDemo() {
   return <DocsNavBar activePath="/" />;

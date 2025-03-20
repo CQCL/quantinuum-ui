@@ -14,7 +14,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "src";
+} from "index";
 
 const CardDemo = () => {
   return (

@@ -6,7 +6,7 @@ import {
   UnderlineIcon,
 } from "@radix-ui/react-icons";
 
-import { ToggleGroup, ToggleGroupItem } from "src";
+import { ToggleGroup, ToggleGroupItem } from "index";
 
 const meta: Meta<typeof ToggleGroup> = {
   component: () => {

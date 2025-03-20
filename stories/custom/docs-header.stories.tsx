@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "src/custom/docs";
+import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "components/custom/docs";
 import { NexusLogo } from "./NexusLogo";
-import { Button } from "src";
+import { Button } from "index";
 import { RocketIcon } from "lucide-react";
 
 
 export function DocsHeaderDemo() {
   return <DocsHeaderWrapper>
-    <DocsHeaderLeft>  
+    <DocsHeaderLeft>
         <NexusLogo
           variant="horizontal"
           className="w-[18rem] md:w-[23rem]"
@@ -17,7 +17,7 @@ export function DocsHeaderDemo() {
         <CodeCopy textToCopy="pip install qnexus"></CodeCopy>
         <Button
             variant="secondary"
-            className="-mt-px flex-grow py-[1.38rem] border-border border bg-background"
+            className="-mt-px grow py-[1.38rem] border-border border bg-background"
             asChild
         >
             <a href="user_guide/sign_up.html">
