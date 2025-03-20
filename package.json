@@ -28,6 +28,10 @@
       {
         "name": "update-systems",
         "prerelease": true
+      },
+      {
+        "name": "dir-restructure",
+        "prerelease": true
       }
     ]
   },
