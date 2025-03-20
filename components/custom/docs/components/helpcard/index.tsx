@@ -12,7 +12,7 @@ export const HelpCard = (props: {
       description: string;
     }[]
   }) => {
-  return (<div className="my-24 grid grid-cols-1 flex-grow gap-8 md:grid-cols-2">
+  return (<div className="my-24 grid grid-cols-1 grow gap-8 md:grid-cols-2">
     {props.columns.map((item) => {
     return (
         <a href={item.link} key={item.title}>

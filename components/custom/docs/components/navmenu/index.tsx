@@ -128,7 +128,7 @@ export const NavBar = (props: {
   enableModeSelector?: boolean
 }) => {
   return (
-    <div className="bg-background text-foreground border-border sticky top-0 z-[100] w-full border-b text-sm">
+    <div className="bg-background text-foreground border-border sticky top-0 z-100 w-full border-b text-sm">
       <div className=" bg-background px-3 md:px-4 mx-auto max-w-[90rem] flex h-14 items-center justify-between">
         <div className="mr-4 flex items-center">
           <div className='block md:hidden mr-3'>

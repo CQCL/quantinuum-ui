@@ -7,7 +7,7 @@ export const CodeCopy = (props: {textToCopy: string, className?: string}) => {
 
     const [copied, setHasCopied] = React.useState(false)
 
-    return <div className="dark:text-foreground text-background w-full flex  items-center justify-center self-start whitespace-nowrap rounded bg-gradient-to-r from-zinc-600 to-slate-600  py-0.5 pl-4 text-center text-sm font-semibold  dark:from-zinc-600 dark:to-slate-600">
+    return <div className="dark:text-foreground text-background w-full flex  items-center justify-center self-start whitespace-nowrap rounded-sm bg-linear-to-r from-zinc-600 to-slate-600  py-0.5 pl-4 text-center text-sm font-semibold  dark:from-zinc-600 dark:to-slate-600">
         <code className="font-mono">{props.textToCopy}</code>
 
         <Button

@@ -38,7 +38,7 @@ HTMLDivElement,
 React.InputHTMLAttributes<HTMLParagraphElement>
 >(({ className, type, ...props }, ref) => {
 
-  return<div className="relative mx-auto flex flex-grow flex-wrap flex-col py-4">
+  return<div className="relative mx-auto flex grow flex-wrap flex-col py-4">
    <div className="mb-4 mt-0 md:mt-6 flex flex-col" ref={ref}>{props.children}</div></div>
 
 })

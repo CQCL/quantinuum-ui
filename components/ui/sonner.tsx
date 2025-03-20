@@ -27,7 +27,7 @@ export const SonnerToast = ({ theme, className, toastOptions, ...props }: Toaste
               toastOptions?.classNames?.cancelButton
           ),
           closeButton:cn(
-            "group-[.toaster]:bg-muted group-[.toaster]:border-border group-[.toaster]:text-foreground bg-red group-[.toaster]:hover:text-muted-foreground",
+            "group-[.toaster]:bg-muted group-[.toaster]:border-border group-[.toaster]:text-foreground bg-red hover:group-[.toaster]:text-muted-foreground",
               toastOptions?.classNames?.closeButton
           ),
         },
