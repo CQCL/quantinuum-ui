@@ -9,8 +9,8 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from "src";
-  
+} from "index";
+
 
 const DialogDemo = () => {
   return (
@@ -29,7 +29,7 @@ const DialogDemo = () => {
       </DrawerFooter>
     </DrawerContent>
   </Drawer>
-  
+
   );
 };
 const meta: Meta<typeof DialogDemo> = {

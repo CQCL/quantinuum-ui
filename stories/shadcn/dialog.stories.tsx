@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "src";
+} from "index";
 
 const DialogDemo = () => {
   return (

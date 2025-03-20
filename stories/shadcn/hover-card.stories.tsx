@@ -7,7 +7,7 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "src";
+} from "index";
 
 import type { Meta, StoryObj } from "@storybook/react";
 const Demo = () => {

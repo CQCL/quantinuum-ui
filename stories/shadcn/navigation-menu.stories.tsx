@@ -3,7 +3,7 @@
 import * as React from "react";
 // import Link from "next/link"
 
-import { cn } from "src/utils";
+import { cn } from "lib";
 
 import { IconJarLogoIcon } from "@radix-ui/react-icons";
 import {
@@ -14,7 +14,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "src";
+} from "index";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -166,7 +166,7 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, Input } from "src";
+import { Button, Input } from "index";
 
 const meta: Meta<typeof NavigationMenuDemo> = {
   component: NavigationMenuDemo,

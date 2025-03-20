@@ -9,7 +9,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
   Button,
-} from "src";
+} from "index";
 function AlertDialogDemo() {
   return (
     <AlertDialog>

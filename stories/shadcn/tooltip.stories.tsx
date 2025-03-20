@@ -5,7 +5,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "src";
+} from "index";
 function TooltipDemo() {
   return (
     <TooltipProvider>

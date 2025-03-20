@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { LifeBuoyIcon, BookIcon } from 'lucide-react'
-import { DocsHelpCard } from 'src'
+import { DocsHelpCard } from 'index'
 
 const helpSectionConfig = {
     columns: [{
@@ -9,7 +9,7 @@ const helpSectionConfig = {
         icon: LifeBuoyIcon,
         link: "https://www.quantinuum.com/contact/docs",
         description: "Need help? Fill out our support form here",
-        
+
     },
     {
         title: "Publications",

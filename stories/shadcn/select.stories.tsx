@@ -7,7 +7,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "src";
+} from "index";
 
 const Demo = (args: ComponentProps<typeof Select>) => {
   const [value, setValue] = React.useState(args.value);

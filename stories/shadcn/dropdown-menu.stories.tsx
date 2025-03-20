@@ -6,7 +6,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "src";
+} from "index";
 
 import type { Meta, StoryObj } from "@storybook/react";
 import { Folder } from "lucide-react";

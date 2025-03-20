@@ -3,8 +3,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import * as React from "react";
-import { Button, Calendar, Popover, PopoverContent, PopoverTrigger } from "src";
-import { cn } from "src/utils";
+import { Button, Calendar, Popover, PopoverContent, PopoverTrigger } from "index";
+import { cn } from "lib";
 
 const DatePickerDemo = () => {
   const [date, setDate] = React.useState<Date>();

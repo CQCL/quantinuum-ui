@@ -5,7 +5,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "src";
+} from "index";
 
 import type { Meta } from "@storybook/react";
 

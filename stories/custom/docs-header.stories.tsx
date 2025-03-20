@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { DocsHeaderWrapper, DocsHeaderRight, DocsHeaderLeft, DocsHeaderTitle, DocsHeaderSubtitle, CodeCopy} from "src/custom/docs";
 import { NexusLogo } from "./NexusLogo";
-import { Button } from "src";
+import { Button } from "index";
 import { RocketIcon } from "lucide-react";
 
 
 export function DocsHeaderDemo() {
   return <DocsHeaderWrapper>
-    <DocsHeaderLeft>  
+    <DocsHeaderLeft>
         <NexusLogo
           variant="horizontal"
           className="w-[18rem] md:w-[23rem]"

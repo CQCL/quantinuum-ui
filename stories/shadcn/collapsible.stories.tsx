@@ -8,7 +8,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "src";
+} from "index";
 
 export function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false);

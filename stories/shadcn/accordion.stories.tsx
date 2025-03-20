@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "src";
+} from "index";
 function AccordionDemo() {
   return (
     <Accordion type="single" collapsible className="w-full">

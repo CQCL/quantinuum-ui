@@ -43,7 +43,7 @@ import {
   SidebarMenuButton,
   DropdownMenuContent,
   DropdownMenuItem,
-} from "src"
+} from "index"
 
 // This is sample data.
 const data = {
@@ -74,7 +74,7 @@ const data = {
       title: "Playground",
       url: "#",
       icon: SquareTerminal,
-      
+
       items: [
         {
           title: "History",
@@ -90,18 +90,18 @@ const data = {
         },
       ],
     },
-  
-   
+
+
   ],
-  
+
 }
 
 
-  
+
   import type { Meta, StoryObj } from "@storybook/react";
 
 
-  
+
 
 const SidebarDemo = () => {
     const data = {
@@ -132,7 +132,7 @@ const SidebarDemo = () => {
             title: "folder123",
             url: "#",
             icon: FolderIcon,
-            
+
             items: [
               {
                 title: "circuitA",
@@ -152,7 +152,7 @@ const SidebarDemo = () => {
             title: "folder123",
             url: "#",
             icon: FolderIcon,
-            
+
             items: [
               {
                 title: "circuitA",
@@ -172,7 +172,7 @@ const SidebarDemo = () => {
             title: "folder123vv",
             url: "#",
             icon: FolderIcon,
-            
+
             items: [
               {
                 title: "circuitA",
@@ -192,7 +192,7 @@ const SidebarDemo = () => {
             title: "foldeav",
             url: "#",
             icon: FolderIcon,
-            
+
             items: [
               {
                 title: "circuitA",
@@ -212,7 +212,7 @@ const SidebarDemo = () => {
             title: "folder1234",
             url: "#",
             icon: FolderIcon,
-            
+
             items: [
               {
                 title: "circuitA",
@@ -228,8 +228,8 @@ const SidebarDemo = () => {
               },
             ],
           },
-         
-        
+
+
         ],
         jobs: [
             {
@@ -241,7 +241,7 @@ const SidebarDemo = () => {
               title: "Compile",
               url: "#",
               icon: HammerIcon,
-              
+
               items: [
                 {
                   title: "job1",
@@ -300,7 +300,7 @@ const SidebarDemo = () => {
                 },
               ],
             },
-         
+
           ],
         projects: [
           {
@@ -327,7 +327,7 @@ const SidebarDemo = () => {
     Header
       </SidebarHeader>
       <SidebarContent>
-    
+
         Content
       </SidebarContent>
       <SidebarFooter>
@@ -365,12 +365,12 @@ const SidebarDemo = () => {
         </div>
       </SidebarInset>
     </SidebarProvider>
-  
+
   );
 };
 const meta: Meta<typeof SidebarDemo> = {
   component: SidebarDemo,
- 
+
 };
 
 export default meta;
