@@ -2,7 +2,7 @@ import { Config } from "tailwindcss";
 // import { tailwindTheme } from ".";
 export default {
     darkMode: ["class"],
-    content: ["./src/**/*.{ts,tsx}", "./stories/**/*.{ts,tsx}"],
+    content: ["./components/**/*.{ts,tsx}", "./stories/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
 //   presets: [tailwindTheme],
     theme: {
     	extend: {
