@@ -44,12 +44,12 @@
     "dist"
   ],
   "type": "module",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "exports": {
-    ".": "./dist/src/index.js",
+    ".": "./dist/index.js",
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/types/src/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "mode": "production",
   "repository": {
     "type": "git",
