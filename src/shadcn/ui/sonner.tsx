@@ -5,7 +5,7 @@ import { cn } from "src/utils"
 
 type ToasterProps = React.ComponentProps<typeof Sonner>
 
-const SonnerToaster = ({ ...props }: ToasterProps) => {
+const SonnerToast = ({ ...props }: ToasterProps) => {
   return (
     <Sonner
       toastOptions={{
@@ -25,4 +25,4 @@ const SonnerToaster = ({ ...props }: ToasterProps) => {
   )
 }
 
-export { SonnerToaster }
+export { SonnerToast }
