@@ -2,7 +2,7 @@
 
 import { Toaster as Sonner } from "sonner"
 import { cn } from "src/utils"
-
+export * as sonner from "sonner"
 type ToasterProps = React.ComponentProps<typeof Sonner>
 
 const SonnerToast = ({ ...props }: ToasterProps) => {
