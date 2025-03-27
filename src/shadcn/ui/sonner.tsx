@@ -21,13 +21,9 @@ const SonnerToast = ({ ...props }: ToasterProps) => {
           error: '[&_[data-icon]]:text-destructive',
           info: '[&_[data-icon]]:text-muted-foreground',
           warning: '[&_[data-icon]]:text-amber-600 [&_[data-icon]]:dark:text-amber-300'
-
         },
-
       }}
-
       {...props}
-
       className={cn("toaster group", props.className)}
     />
   )
