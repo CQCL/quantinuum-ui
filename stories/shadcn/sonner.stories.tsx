@@ -7,7 +7,10 @@ const SonnerDemo = (props: {defaultStyles: Boolean}) => {
     return props.defaultStyles ? (
       <div>
         <SonnerToast closeButton duration={9000000}/>
-        <Button onClick={() => sonner.toast.success('Success!')}>Show Toast</Button>
+        <Button onClick={() => sonner.toast.error('Error!')}>Show Error Toast</Button>
+        <Button onClick={() => sonner.toast.success('Success!')}>Show Success Toast</Button>
+        <Button onClick={() => sonner.toast.info('Info!')}>Show Info Toast</Button>
+        <Button onClick={() => sonner.toast.warning('Warning!')}>Show Warning Toast</Button>
       </div>
     ) : (
       <div>
