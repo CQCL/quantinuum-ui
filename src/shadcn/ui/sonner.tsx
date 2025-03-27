@@ -17,9 +17,17 @@ const SonnerToast = ({ ...props }: ToasterProps) => {
             "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
           cancelButton:
             "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
+          success: '[&_[data-icon]]:text-green-600 [&_[data-icon]]:dark:text-green-300',
+          error: '[&_[data-icon]]:text-destructive',
+          info: '[&_[data-icon]]:text-muted-foreground',
+          warning: '[&_[data-icon]]:text-amber-600 [&_[data-icon]]:dark:text-amber-300'
+
         },
+
       }}
+
       {...props}
+
       className={cn("toaster group", props.className)}
     />
   )
