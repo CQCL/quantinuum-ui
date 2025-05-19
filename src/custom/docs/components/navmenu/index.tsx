@@ -104,7 +104,7 @@ const navConfig = {
       },
       {
         title: 'User Guide',
-        href: '/lambeq/guide/pipeline.html',
+        href: '/lambeq/pipeline.html',
       },
       {
         title: 'Tutorials',
@@ -113,6 +113,10 @@ const navConfig = {
       {
         title: 'Code Examples',
         href: '/lambeq/notebooks.html',
+      },
+      {
+        title: 'API Reference',
+        href: '/lambeq/root-api.html',
       },]
     }
   ],
