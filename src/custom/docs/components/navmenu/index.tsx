@@ -108,7 +108,7 @@ const navConfig = {
       },
       {
         title: 'Tutorials',
-        href: '/lambeq/tutorials/sentence-input.html',
+        href: '/lambeq/tutorials/discocirc-basics.html',
       },
       {
         title: 'Code Examples',
