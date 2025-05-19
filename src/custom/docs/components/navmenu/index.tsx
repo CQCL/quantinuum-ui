@@ -104,11 +104,11 @@ const navConfig = {
       },
       {
         title: 'User Guide',
-        href: '/lambeq/guide/pipeline.html',
+        href: '/lambeq/guide/lambeq-basic.html',
       },
       {
         title: 'Tutorials',
-        href: '/lambeq/tutorials/sentence-input.html',
+        href: '/lambeq/sent2circ.html',
       },
       {
         title: 'Code Examples',
