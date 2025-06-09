@@ -89,7 +89,7 @@
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^24.1.0",
-    "serve": "^14.2.1",
+    "serve": "^14.2.4",
     "sonner": "^2.0.1",
     "storybook": "^8.4.7",
     "tailwindcss-animate": "^1.0.7"
@@ -141,7 +141,7 @@
   "peerDependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@tailwindcss/typography": "^0.5.15",
-    "next": ">=14.0.0",
+    "next": ">=13.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
