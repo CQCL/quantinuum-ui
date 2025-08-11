@@ -22,6 +22,10 @@
         "prerelease": true
       },
       {
+        "name": "NRP-1928-amend-muted-foreground-css-var",
+        "prerelease": true
+      },
+      {
         "name": "navbar",
         "prerelease": true
       },
