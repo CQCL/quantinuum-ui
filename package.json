@@ -16,23 +16,7 @@
   },
   "release": {
     "branches": [
-      "main",
-      {
-        "name": "alpha",
-        "prerelease": true
-      },
-      {
-        "name": "navbar",
-        "prerelease": true
-      },
-      {
-        "name": "update-systems",
-        "prerelease": true
-      },
-      {
-        "name": "update-sonner",
-        "prerelease": true
-      }
+      "main"
     ]
   },
   "publishConfig": {
