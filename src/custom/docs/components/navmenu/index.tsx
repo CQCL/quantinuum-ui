@@ -7,16 +7,14 @@ import { ModeSelector } from './ModeSelector'
 import React from 'react'
 import { SystemsLogo } from '../logos/SystemsLogo'
 import { NexusLogo } from '../logos/NexusLogo'
-import { TKETLogo } from '../logos/TKETLogo'
 import { InquantoLogo } from '../logos/InQuantoLogo'
 import { LambeqLogo } from '../logos/LambeqLogo'
-
 
 const navConfig = {
   navTextLinks: [
     {
       title: 'Systems',
-      href: '/systems/index.html',
+      href: '/systems/',
       pathMatch: 'somewhere',
       logo: <SystemsLogo width={150 * 1.5} height={16 * 1.5}></SystemsLogo>,
       description: "Quantinuum's QCCD ion-trap hardware, the world's highest peforming quantum computer.",
@@ -35,7 +33,7 @@ const navConfig = {
       }]
     }, {
       title: 'Nexus',
-      href: '/nexus/index.html',
+      href: '/nexus/',
       pathMatch: 'somewhere',
       logo: <NexusLogo variant="horizontal"  className="h-10 w-48 -mt-1"  />,
       description: "Cloud platform connecting users with hardware and compilation services, alongside associated data.",
@@ -56,24 +54,34 @@ const navConfig = {
         href: '/nexus/support_index.html',
       },]
     }, {
-      title: "TKET",
-      href: "/tket/index.html",
+      title: "Developer Tools",
+      href: "",
       pathMatch: "",
-      logo: <TKETLogo className="h-8 w-32" ></TKETLogo>,
-      description: "Quantum computing toolkit and optimizing compiler",
+      logo: <></>,
+      description: "Opensource developer tools empower users to build and experiment with quantum algorithms.",
       dropDown: [{
-          title: 'API Docs',
-          href: '/tket/api-docs',
-        },{
-          title: 'User Guide',
-          href: '/tket/user-guide',
+        title: 'Pytket API Docs',
+        href: '/tket/api-docs/',
       },{
-          title: 'Blog',
-          href: '/tket/blog/',
-        },]
+        title: 'Pytket User Guide',
+        href: '/tket/user-guide/',
+      }, {
+        title: "Pytket Extensions",
+        href: '/tket/api-docs/extensions.html',
+      }, {
+        title: 'Guppy',
+        href: "/guppy/",
+      }, {
+        title: "Selene",
+        href: "/selene/"
+      }, {
+        title: "\u03BBambeq",
+        href: "/lambeq/"
+      }, 
+    ]
     }, {
       title: "InQuanto",
-      href: "/inquanto/index.html",
+      href: "/inquanto/",
       pathMatch: "",
       logo: <InquantoLogo className="h-8 w-56"></InquantoLogo>,
       description: "Enabling complex molecular and materials simulations",
@@ -93,28 +101,7 @@ const navConfig = {
           title: 'Extensions',
           href: '/inquanto/tutorials/examples_overview.html',
         },]
-    }, {
-      title: "\u03BBambeq",
-      href: "/lambeq/index.html",
-      logo: <LambeqLogo className="h-8 w-48"></LambeqLogo>,
-      description: "A Python toolkit for quantum natural language processing",
-      dropDown: [{
-        title: 'Getting Started',
-        href: '/lambeq/intro.html',
-      },
-      {
-        title: 'User Guide',
-        href: '/lambeq/guide/lambeq-basic.html',
-      },
-      {
-        title: 'Tutorials',
-        href: '/lambeq/sent2circ.html',
-      },
-      {
-        title: 'Code Examples',
-        href: '/lambeq/notebooks.html',
-      },]
-    }
+    }, 
   ],
 }
 
