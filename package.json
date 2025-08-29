@@ -18,7 +18,7 @@
     "branches": [
       "main",
        {
-        "name": "delete-shadcn-components",
+        "name": "refactor/remove-unused-components",
         "prerelease": true
       }
     ]
