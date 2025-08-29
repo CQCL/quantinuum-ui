@@ -16,7 +16,11 @@
   },
   "release": {
     "branches": [
-      "main"
+      "main",
+       {
+        "name": "delete-shadcn-components",
+        "prerelease": true
+      }
     ]
   },
   "publishConfig": {

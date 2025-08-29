@@ -6,8 +6,20 @@ Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and rad
 ### Development
 
 #### Basic commands
+
+Clone repository
 ```bash
+git clone git@github.com:CQCL/quantinuum-ui.git
+```
+
+Install dependencies and run storybook web server locally
+```bash
+npm i
 npm run storybook # Run storybook application to view components.
+```
+
+Build storybook and UI library.
+```bash
 npm run build-storybook # Build storybook application as static HTML.
 npm run build # Build component library with rollup.
 ```
