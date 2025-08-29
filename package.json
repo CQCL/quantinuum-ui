@@ -18,7 +18,7 @@
     "branches": [
       "main",
        {
-        "name": "refactor/remove-unused-components",
+        "name": "remove-unused-components",
         "prerelease": true
       }
     ]
