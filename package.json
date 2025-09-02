@@ -20,6 +20,10 @@
       {
         "name": "remove-unused-components",
         "prerelease": true
+      },
+      {
+        "name": "refactor/simpler-build",
+        "prerelease": true
       }
     ]
   },
@@ -37,7 +41,7 @@
     ".": "./dist/src/index.js",
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/types/src/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "mode": "production",
   "repository": {
     "type": "git",

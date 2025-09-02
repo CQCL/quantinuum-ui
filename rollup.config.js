@@ -6,7 +6,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
 
-export default [{
+export default [ {
   onwarn(warning, warn) {
     if (
       warning.code === "MODULE_LEVEL_DIRECTIVE" &&
@@ -21,22 +21,17 @@ export default [{
     {
       dir: "dist/",
       format: "esm",
-      preserveModules: true,
-      sourcemap: true,
     },
   ],
   plugins: [
     peerDepsExternal(),
-    resolve(),
-    commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
-      declarationDir: "./dist/types",
+      declarationDir: "./dist",
     }),
     copy({
       targets: [{ src: "./src/tokens.css", dest: "./dist" }],
     }),
-    terser({ compress: { directives: false } }),
     preserveDirectives(),
   ],
 
