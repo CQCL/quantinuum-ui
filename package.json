@@ -38,10 +38,13 @@
   "type": "module",
   "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/types/src/index.d.ts",
+  "types": "./dist/index.d.ts",
   "mode": "production",
   "repository": {
     "type": "git",
