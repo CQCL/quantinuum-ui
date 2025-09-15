@@ -21,7 +21,7 @@
         "name": "remove-unused-components",
         "prerelease": true
       },
-      {
+    {
         "name": "refactor-simpler-build",
         "prerelease": true
       }
@@ -36,16 +36,16 @@
     "dist"
   ],
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "dist/src/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "import": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
     },
     "./tokens.css": "./dist/tokens.css"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/src/index.d.ts",
   "mode": "production",
   "repository": {
     "type": "git",
