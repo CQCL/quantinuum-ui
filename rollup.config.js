@@ -3,9 +3,9 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import copy from "rollup-plugin-copy";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from 'rollup-plugin-postcss';
 import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
-
 export default [{
   onwarn(warning, warn) {
     if (
@@ -59,4 +59,16 @@ export default [{
     }),
     terser(),
   ],
-}];
+
+},
+// Generate small tailwind class manifest for more efficient compiling by consumers.
+{
+  input: ".storybook/styles.css",
+  output: [{ file: "dist/tailwind-manifest.css", format: "es" }],
+  plugins: [
+      postcss({
+          extract: true,
+          minimize: true,
+      }),
+  ],
+},];

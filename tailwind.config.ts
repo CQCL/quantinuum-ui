@@ -1,5 +1,5 @@
 import { Config } from "tailwindcss";
-import { tailwindTheme } from "./src";
+import { tailwindTheme } from "./src/tailwindTheme";
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx}", "./stories/**/*.{ts,tsx}"],
