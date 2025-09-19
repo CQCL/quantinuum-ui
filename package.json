@@ -21,8 +21,8 @@
         "name": "remove-unused-components",
         "prerelease": true
       },
-      {
-        "name": "downgrade-react-avatar",
+    {
+        "name": "refactor-simpler-build",
         "prerelease": true
       }
     ]
@@ -36,9 +36,13 @@
     "dist"
   ],
   "type": "module",
-  "main": "dist/src/index.js",
+  "main": "./dist/src/index.js",
   "exports": {
-    ".": "./dist/src/index.js",
+    ".": {
+      "import": "./dist/src/index.js",
+      "types": "./dist/types/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
     "./tokens.css": "./dist/tokens.css"
   },
   "types": "./dist/types/src/index.d.ts",
