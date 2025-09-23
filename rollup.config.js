@@ -3,11 +3,11 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import copy from "rollup-plugin-copy";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import postcss from 'rollup-plugin-postcss';
 import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
-export default [{
-  onwarn(warning, warn) {
+
+
+ function onwarn(warning, warn) {
     if (
       warning.code === "MODULE_LEVEL_DIRECTIVE" &&
       warning.message.includes(`'use client'`)
@@ -15,7 +15,9 @@ export default [{
       return;
     }
     warn(warning);
-  },
+  }
+export default [{
+ onwarn,
   input: "src/index.ts",
   output: [
     {
@@ -63,12 +65,25 @@ export default [{
 },
 // Generate small tailwind class manifest for more efficient compiling by consumers.
 {
-  input: ".storybook/styles.css",
-  output: [{ file: "dist/tailwind-manifest.css", format: "es" }],
-  plugins: [
-      postcss({
-          extract: true,
-          minimize: true,
-      }),
+  onwarn,
+  input: "src/index.ts",
+  output: [
+    {
+      file: "dist/tailwind-manifest.js",
+      format: "esm",
+      preserveModules: false,
+      sourcemap: false,
+    },
   ],
-},];
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
+    typescript({
+      declaration: false,
+      tsconfig: "./tsconfig.json",
+    }),
+    preserveDirectives(),
+  ],
+
+}];
