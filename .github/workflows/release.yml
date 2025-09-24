@@ -25,17 +25,20 @@ jobs:
       - run: npm run lint
       - run: npm run build
 
+
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+
+      - name: Build storybook site
+      - run: npm run build-storybook
+
       - name: Upload static files as artifact
-        id: storybook_static
         uses: actions/upload-pages-artifact@v4
         with:
           path: storybook-static/
 
       - name: Publish storybook build to github pages
-        id: storybook_static
         uses: actions/deploy-pages@v4
