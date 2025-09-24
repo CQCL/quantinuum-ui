@@ -29,3 +29,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Upload static files as artifact
+        id: storybook_static
+        uses: actions/upload-pages-artifact@v4 # or specific "vX.X.X" version tag for this action
+        with:
+          path: storybook-static/
+
+      - name: Publish storybook build to github pages
+        id: storybook_static
+        uses: actions/deploy-pages@v4
