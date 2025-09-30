@@ -35,7 +35,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build storybook site
-        id: build
         run: npm run build-storybook
 
       - name: Upload static files as artifact
@@ -49,7 +48,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: release-lib
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
