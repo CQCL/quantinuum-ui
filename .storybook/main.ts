@@ -20,6 +20,15 @@ const config = {
 
   typescript: {
     reactDocgen: "react-docgen-typescript"
-  }
+  },
+   previewBody: (body: any) => `
+    ${body}
+    ${
+       `<script
+        src="dist/src/utils/syncTheme.js"
+        type="application/javascript"
+      ></script>`
+    }
+  `,
 };
 export default config;
