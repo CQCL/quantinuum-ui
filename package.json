@@ -24,6 +24,10 @@
     {
         "name": "refactor-simpler-build",
         "prerelease": true
+      },
+      {
+        "name": "dark-mode-selector-css",
+        "prerelease": true
       }
     ]
   },
