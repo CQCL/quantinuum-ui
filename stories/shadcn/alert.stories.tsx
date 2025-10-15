@@ -1,7 +1,7 @@
 import { RocketIcon } from "@radix-ui/react-icons";
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/react-vite";
 
-import type { StoryObj } from "@storybook/react";
+import type { StoryObj } from "@storybook/react-vite";
 import { Alert, AlertDescription, AlertTitle } from "src";
 
 export function AlertDemo() {

@@ -1,6 +1,6 @@
 
-import {createRoot} from "react-dom/client" 
-import { ComponentProps } from "react";
+import { createRoot } from "react-dom/client";
+
 import { NavBar } from "../../components/navmenu";
 
   (() => {
@@ -8,9 +8,9 @@ import { NavBar } from "../../components/navmenu";
     if (!mountElement) return
     const renderIn = document.createElement('div')
     mountElement.appendChild(renderIn)
-  
+
     const root = createRoot(renderIn)
-    
+
     root.render(
       <div className="use-tailwind">  <div className="antialiased" style={{fontFamily: `Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`}}><NavBar activePath="/" ></NavBar> </div></div>
     )

@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import { LifeBuoyIcon, BookIcon } from 'lucide-react'
 import { DocsHelpCard } from 'src'
 
