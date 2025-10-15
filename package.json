@@ -10,7 +10,7 @@
   "sideEffects": false,
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "rm -rf ./dist && rollup -c && storybook build && cp ./dist/src/utils/syncTheme.js ./storybook-static/syncTheme.js",
     "lint": "tsc",
     "build": "rm -rf ./dist && rollup -c"
   },
