@@ -19,10 +19,10 @@ export function CalendarDemo() {
   );
 }
 
-import type { Meta } from "@storybook/react";
+import type { Meta } from "@storybook/react-vite";
 import { DateRange } from "react-day-picker";
 
-import type { StoryObj } from "@storybook/react";
+import type { StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof CalendarDemo> = {
   component: CalendarDemo,

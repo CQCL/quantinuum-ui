@@ -1,6 +1,6 @@
 "use client";
 
-import type { Meta } from "@storybook/react";
+import type { Meta } from "@storybook/react-vite";
 
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
 import * as React from "react";
@@ -90,7 +90,7 @@ const ComboboxDemo = () => {
   );
 };
 
-import type { StoryObj } from "@storybook/react";
+import type { StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof ComboboxDemo> = {
   component: ComboboxDemo,

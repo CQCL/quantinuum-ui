@@ -1,5 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import { ComponentProps } from "react";
+
 import { DocsTripleCard } from "src";
 
  const tripleCardProps = [
@@ -26,7 +27,7 @@ import { DocsTripleCard } from "src";
       "title": "Getting Started",
       "icon": "SquarePlay",
       "subtitle": "Get up and running using Nexus for your Python quantum computing workflows",
-  
+
       "image_link": "",
       "image_description": "description",
       "links": [

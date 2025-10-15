@@ -9,7 +9,7 @@ import {
   HoverCardTrigger,
 } from "src";
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 const Demo = () => {
   return (
     <HoverCard>
