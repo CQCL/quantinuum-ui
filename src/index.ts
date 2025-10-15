@@ -1,4 +1,5 @@
 export * from './custom/docs';
+export * from "./custom/icons";
 export * from "./custom/slide-in";
 export * from "./custom/theme-selector";
 export * from "./shadcn/ui/accordion";
