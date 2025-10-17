@@ -24,7 +24,7 @@ const config = {
     ${body}
     ${
        `<script
-        src="/syncTheme.js"
+        src="syncTheme.js"
         type="application/javascript"
       ></script>`
     }
