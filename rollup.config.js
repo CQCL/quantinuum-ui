@@ -7,7 +7,7 @@ import preserveDirectives from "rollup-plugin-preserve-directives";
 import { terser } from "rollup-plugin-terser";
 
 
-function onwarn(warning, warn) {
+ function onwarn(warning, warn) {
     if (
       warning.code === "MODULE_LEVEL_DIRECTIVE" &&
       warning.message.includes(`'use client'`)
@@ -17,7 +17,7 @@ function onwarn(warning, warn) {
     warn(warning);
   }
 export default [{
-  onwarn,
+ onwarn,
   input: "src/index.ts",
   output: [
     {
@@ -61,5 +61,29 @@ export default [{
     }),
     terser(),
   ],
-}
-];
+
+},
+// Generate small tailwind class manifest for more efficient compiling by consumers.
+{
+  onwarn,
+  input: "src/index.ts",
+  output: [
+    {
+      file: "dist/tailwind-manifest.js",
+      format: "esm",
+      preserveModules: false,
+      sourcemap: false,
+    },
+  ],
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
+    typescript({
+      declaration: false,
+      tsconfig: "./tsconfig.json",
+    }),
+    preserveDirectives(),
+  ],
+
+}];
