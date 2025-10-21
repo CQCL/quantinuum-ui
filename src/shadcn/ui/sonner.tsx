@@ -11,7 +11,7 @@ const SonnerToast = ({ ...props }: ToasterProps) => {
       toastOptions={{
         classNames: {
           toast:
-            "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
+            "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg bg-red-500",
           content: "w-[calc(100%-1.4rem)]",
           description: "group-[.toast]:text-muted-foreground",
           actionButton:
