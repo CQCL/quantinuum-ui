@@ -28,6 +28,10 @@
       {
         "name": "dark-mode-selector-css",
         "prerelease": true
+      },
+      {
+        "name": "toaster-restrict-width",
+        "prerelease": true
       }
     ]
   },
