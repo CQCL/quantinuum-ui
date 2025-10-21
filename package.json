@@ -30,7 +30,7 @@
         "prerelease": true
       },
       {
-        "name": "toaster-width",
+        "name": "set-toaster-width",
         "prerelease": true
       }
     ]
