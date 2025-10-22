@@ -1,8 +1,6 @@
 name: Pre Release library
 on:
   pull_request:
-    branches-ignore:
-      - main
 
 jobs:
   release:
