@@ -1,8 +1,10 @@
 name: Pre Release library
 on:
-  pull_request:
+  push:
     branches:
-        - main   # triggers only for PRs targeting main
+        - '**'        # matches every branch
+        - '!main'   # excludes main
+
 jobs:
   release:
     runs-on: ubuntu-latest
