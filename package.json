@@ -19,7 +19,7 @@
       "main",
       {
         "name": "*",
-        "prerelease": "${name}"
+        "prerelease": true
       }
     ],
     "plugins": [
