@@ -132,5 +132,8 @@
     "react-hook-form": "^7.50.1",
     "tailwindcss": "^3.4.15",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "engines": {
+    "node": "^22.14.0 || >= 24.10.0"
   }
 }
