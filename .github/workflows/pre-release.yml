@@ -1,7 +1,8 @@
 name: Pre Release library
 on:
   pull_request:
-
+    branches:
+        - main   # triggers only for PRs targeting main
 jobs:
   release:
     runs-on: ubuntu-latest
