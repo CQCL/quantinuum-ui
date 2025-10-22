@@ -1,9 +1,8 @@
 name: Pre Release library
 on:
   pull_request:
-    branches:
-        - '**'        # matches every branch
-        - '!main'   # excludes main
+    branches-ignore:
+      - main
 
 jobs:
   release:
