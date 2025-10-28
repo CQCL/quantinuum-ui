@@ -1,4 +1,4 @@
-import type { Meta } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import {
   Table,
   TableBody,
@@ -7,7 +7,7 @@ import {
   TableFooter,
   TableHead,
   TableHeader,
-  TableRow,
+  TableRow
 } from "src";
 
 const invoices = [
@@ -92,3 +92,8 @@ const meta: Meta<typeof Table> = {
 };
 
 export default meta;
+
+
+export const Default: StoryObj<typeof Table> = {
+  args: {},
+};

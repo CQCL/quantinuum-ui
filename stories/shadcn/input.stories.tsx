@@ -24,3 +24,8 @@ export const File: Story = {
     type: "file",
   },
 };
+
+
+export const Default: StoryObj<typeof Input> = {
+  args: {},
+};
