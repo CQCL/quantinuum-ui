@@ -3,7 +3,7 @@ Quantinuum UI is a React component library and design token system built with [s
 
 It is used internally at Quantinuum for building web applications with a consistent look and feel.
 
-You can have a look at the [storybook](https://quantinuum.github.io/quantinuum-ui/) to see the available components and design tokens.
+You can have a look at the [storybook](https://cqcl.github.io/quantinuum-ui/) to see the available components and design tokens.
 
 # Commands
 Clone repository
