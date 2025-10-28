@@ -1,4 +1,4 @@
-import type { Meta } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Textarea } from "src";
 
 const meta: Meta<typeof Textarea> = {
@@ -9,3 +9,8 @@ const meta: Meta<typeof Textarea> = {
 };
 
 export default meta;
+
+
+export const Default: StoryObj<typeof Textarea> = {
+  args: {},
+};

@@ -4,10 +4,10 @@ import {
   Label,
   Popover,
   PopoverContent,
-  PopoverTrigger,
+  PopoverTrigger
 } from "src";
 
-import type { Meta } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof Popover> = {
   component: (args) => {
@@ -66,3 +66,8 @@ const meta: Meta<typeof Popover> = {
 };
 
 export default meta;
+
+
+export const Default: StoryObj<typeof Popover> = {
+  args: {},
+};
