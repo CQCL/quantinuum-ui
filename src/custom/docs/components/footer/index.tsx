@@ -17,14 +17,26 @@ const footerConfig = {
         {
           name: "InQuanto",
           href: "/inquanto"
+        },
+        {
+          name: "Quantum Origin",
+          href: "/origin"
         }
       ]
     }, {
       name: "Opensource",
       items: [
         {
-          name: "TKET",
+          name: "pytket",
           href: "/tket"
+        },
+        {
+          name: "guppy",
+          href: "/guppy"
+        },
+        {
+          name: "selene",
+          href: "/selene"
         },
         {
           name: "\u03BBambeq",
