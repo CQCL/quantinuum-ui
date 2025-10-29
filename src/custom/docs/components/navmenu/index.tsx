@@ -80,28 +80,20 @@ const navConfig = {
       }, 
     ]
     }, {
-      title: "InQuanto",
-      href: "/inquanto/",
+      title: "Solutions",
+      href: "",
       pathMatch: "",
-      logo: <InquantoLogo className="h-8 w-56"></InquantoLogo>,
-      description: "Enabling complex molecular and materials simulations",
+      logo: <></>,
+      description: "End-to-end Application Solutions leveraging Quantinuum Systems.",
       dropDown: [{
-          title: 'Guides',
-          href: '/inquanto/manual/howto.html',
-        },
-        {
-          title: 'Trainings',
-          href: '/inquanto/tutorials/tutorial_overview.html',
-        },
-        {
-          title: 'API Reference',
-          href: '/inquanto/api/inquanto_api_intro.html',
-        },
-        {
-          title: 'Extensions',
-          href: '/inquanto/tutorials/examples_overview.html',
-        },]
-    }, 
+        title: 'InQuanto',
+        href: '/inquanto/',
+      },{
+        title: 'Quantum Origin',
+        href: "/origin/",
+      }
+    ]
+    }
   ],
 }
 
