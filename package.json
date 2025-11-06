@@ -28,6 +28,10 @@
       {
         "name": "dark-mode-selector-css",
         "prerelease": true
+      },
+      {
+        "name": "NRP-2403-dialog-enhancements",
+        "prerelease": true
       }
     ]
   },
