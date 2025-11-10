@@ -17,11 +17,11 @@ const DialogClose = DialogPrimitive.Close
 const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay> & {
-    isBackgroundVisible?: boolean
+    isBackdropBlack?: boolean
   }
 >(({
     className,
-    isBackgroundVisible = false
+    isBackdropBlack = false
     , ...props
   }, ref) => (
     <>
@@ -31,8 +31,8 @@ const DialogOverlay = React.forwardRef<
           "fixed",
           "inset-0 z-50",
           "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
-          isBackgroundVisible && "bg-background/60",
-          !isBackgroundVisible && "bg-background/80 backdrop-blur-sm",
+          isBackdropBlack && "bg-black/20",
+          !isBackdropBlack && "bg-background/80 backdrop-blur-sm",
           className
         )}
         {...props}
@@ -46,14 +46,14 @@ const DialogContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> & {
     isDismissable?: boolean
     isBottomDialog?: boolean
-    isBackgroundVisible?: boolean
+    isBackdropBlack?: boolean
   }
 >(({
     className,
     children,
     isDismissable = true,
     isBottomDialog = false,
-    isBackgroundVisible = false,
+    isBackdropBlack = false,
     ...props },
   ref) => {
   const base = [
@@ -86,7 +86,7 @@ const DialogContent = React.forwardRef<
 
   return (
     <DialogPortal>
-      <DialogOverlay isBackgroundVisible={isBackgroundVisible}/>
+      <DialogOverlay isBackdropBlack={isBackdropBlack}/>
       <DialogPrimitive.Content
         ref={ref}
         className={cn(base, isBottomDialog ? bottomStyles : centerStyles, className)}

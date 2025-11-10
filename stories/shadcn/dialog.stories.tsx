@@ -18,13 +18,13 @@ export const BottomDialogDemo = () => {
         <DialogContent
           isDismissable={false}
           isBottomDialog={true}
-          isBackgroundVisible={true}
+          isBackdropBlack={true}
         >
-          <DialogHeader>
+          <DialogHeader className="mx-auto">
             <DialogTitle>Privacy Notice</DialogTitle>
             <DialogDescription>
-              <div className="flex">
-                <p className="flex-col-9">
+              <div className="flex gap-6 mx-auto">
+                <p className="flex-col-3">
                   We use cookies and similar technologies to improve your experience on our site, to analyze our traffic, and to understand where our audience is coming from.
                 </p>
                 <div className="flex-col-3">
