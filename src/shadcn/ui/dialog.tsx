@@ -38,14 +38,12 @@ const DialogContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> & {
     isDismissable?: boolean
     isBottomDialog?: boolean
-    isBackdropBlack?: boolean
   }
 >(({
     className,
     children,
     isDismissable = true,
     isBottomDialog = false,
-    isBackdropBlack = false,
     ...props },
   ref) => {
   const base = [
@@ -78,7 +76,7 @@ const DialogContent = React.forwardRef<
 
   return (
     <DialogPortal>
-      <DialogOverlay isBackdropBlack={isBackdropBlack}/>
+      <DialogOverlay/>
       <DialogPrimitive.Content
         ref={ref}
         className={cn(base, isBottomDialog ? bottomStyles : centerStyles, className)}

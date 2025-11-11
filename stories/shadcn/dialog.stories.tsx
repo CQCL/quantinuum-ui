@@ -18,7 +18,6 @@ export const BottomDialogDemo = () => {
         <DialogContent
           isDismissable={false}
           isBottomDialog={true}
-          isBackdropBlack={true}
         >
           <DialogHeader className="mx-auto">
             <DialogTitle>Privacy Notice</DialogTitle>
