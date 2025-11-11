@@ -16,19 +16,7 @@
   },
   "release": {
     "branches": [
-      "main",
-      {
-        "name": "remove-unused-components",
-        "prerelease": true
-      },
-      {
-        "name": "refactor-simpler-build",
-        "prerelease": true
-      },
-      {
-        "name": "dark-mode-selector-css",
-        "prerelease": true
-      }
+      "main"
     ]
   },
   "publishConfig": {
