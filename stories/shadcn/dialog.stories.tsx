@@ -49,7 +49,7 @@ const meta: Meta<typeof DialogDemo> = {
       description: 'Positions the dialog at the bottom of the screen.',
       defaultValue: false,
   },
-   isDismissable: {
+  isDismissable: {
       control: 'boolean',
       description: 'Whether the dialog can be dismissed.',
       defaultValue: true,
