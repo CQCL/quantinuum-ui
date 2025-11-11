@@ -9,7 +9,7 @@ import {
   DialogTrigger
 } from "src";
 
-export const BottomDialogDemo = (props: {isOpen: boolean, isBottomDialog: boolean, isDismissable: boolean}) => {
+const DialogDemo = (props: {isOpen: boolean, isBottomDialog: boolean, isDismissable: boolean}) => {
   return (
     <div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -41,34 +41,13 @@ export const BottomDialogDemo = (props: {isOpen: boolean, isBottomDialog: boolea
   );
 };
 
-const DialogDemo = () => {
-  return (
-    <div>
-      <Dialog>
-        <DialogTrigger>
-          <Button>Open Dialog</Button>
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you sure absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
-    </div>
-  );
-};
-
-const meta: Meta<typeof BottomDialogDemo> = {
-  component: BottomDialogDemo,
+const meta: Meta<typeof DialogDemo> = {
+  component: DialogDemo,
   argTypes: {
     isBottomDialog: {
       control: 'boolean',
       description: 'Positions the dialog at the bottom of the screen.',
-      defaultValue: true,
+      defaultValue: false,
   },
    isDismissable: {
       control: 'boolean',
@@ -76,7 +55,7 @@ const meta: Meta<typeof BottomDialogDemo> = {
       defaultValue: true,
   },
   isOpen: {
-      control: 'boolean', // 👈 Tells Storybook this is a toggle
+      control: 'boolean',
       description: 'Controls whether the dialog is open or closed.',
       defaultValue: true,
   }
@@ -85,9 +64,10 @@ const meta: Meta<typeof BottomDialogDemo> = {
 
 export default meta;
 
-export const Default: StoryObj<typeof BottomDialogDemo> = {
+export const Default: StoryObj<typeof DialogDemo> = {
   args: {
-    isBottomDialog: true,
-    isOpen: true
+    isOpen: true,
+    isBottomDialog: false,
+    isDismissable: true,
   },
 };
