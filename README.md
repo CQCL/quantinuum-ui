@@ -1,12 +1,11 @@
 # @quantinuum/quantinuum-ui
-Quantinuum design tokens and React components.
+Quantinuum UI is a React component library and design token system built with [shadcn](https://ui.shadcn.com/), Radix UI and Tailwind CSS.
 
-Based on [shadcn](https://ui.shadcn.com/), an opinionated tailwind theme and radix-ui component generator. Shadcn components have been generated into this repo using the `components.json` definition and re-exported as a new library.
+It is used internally at Quantinuum for building web applications with a consistent look and feel.
 
-### Development
+You can have a look at the [storybook](https://cqcl.github.io/quantinuum-ui/) to see the available components and design tokens.
 
-#### Basic commands
-
+# Commands
 Clone repository
 ```bash
 git clone git@github.com:CQCL/quantinuum-ui.git
@@ -24,13 +23,5 @@ npm run build-storybook # Build storybook application as static HTML.
 npm run build # Build component library with rollup.
 ```
 
-
-### Design Tokens
+# Design Tokens
 CSS variables are declared in `src/tokens.css`. Dark mode is enabled when adding the attribute `data-theme="dark"` higher up in the tree.
-
-
-
-
-
-
-

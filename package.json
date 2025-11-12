@@ -18,15 +18,7 @@
     "branches": [
       "main",
       {
-        "name": "remove-unused-components",
-        "prerelease": true
-      },
-      {
        "name": "fix-move-deps",
-        "prerelease": true
-      },
-      {
-        "name": "dark-mode-selector-css",
         "prerelease": true
       }
     ]
