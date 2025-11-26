@@ -24,7 +24,7 @@ export default [{
       dir: "dist/",
       format: "esm",
       preserveModules: true,
-      sourcemap: true,
+      sourcemap: false,
     },
   ],
   plugins: [
@@ -58,6 +58,7 @@ export default [{
       tsconfig: "./tsconfig.json",
       outDir: "dist/src/utils/",
       declaration: false,
+      sourceMap: false,
     }),
     terser(),
   ],
@@ -82,6 +83,7 @@ export default [{
     typescript({
       declaration: false,
       tsconfig: "./tsconfig.json",
+       sourceMap: false,
     }),
     preserveDirectives(),
   ],
