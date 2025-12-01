@@ -2,16 +2,13 @@ import { IconJarLogoIcon } from "@radix-ui/react-icons";
 import { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
 import {
-  Button,
-  Input,
+  Button, cn, Input,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  cn,
-  navigationMenuTriggerStyle,
+  NavigationMenuTrigger, navigationMenuTriggerStyle
 } from "src";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -117,9 +114,9 @@ function NavigationDemo() {
             height="24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="absolute mr-4 ml-2 w-10 flex-none text-slate-300 dark:text-slate-400"
             aria-hidden="true"
           >
